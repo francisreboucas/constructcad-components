@@ -1,0 +1,119 @@
+{
+  "component": "Luminária pendente",
+  "def": {
+    "kind": "Lighting",
+    "params": [
+      {
+        "name": "Diametro",
+        "value": 0.35,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Queda",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": true
+      }
+    ],
+    "items": [
+      {
+        "name": "Cabo",
+        "material": "Aço",
+        "in_plan": false,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-Queda",
+            "radius": "0.005",
+            "height": "Queda"
+          }
+        }
+      },
+      {
+        "name": "Cúpula",
+        "material": "Alumínio",
+        "in_plan": true,
+        "shape": {
+          "Revolution": {
+            "plane": "Front",
+            "offset": "0",
+            "axis": "0",
+            "angle": "360",
+            "points": [
+              {
+                "u": "0",
+                "v": "-Queda - 0.02",
+                "radius": ""
+              },
+              {
+                "u": "Diametro / 2",
+                "v": "-Queda - 0.02",
+                "radius": ""
+              },
+              {
+                "u": "0.04",
+                "v": "-Queda + 0.2",
+                "radius": ""
+              },
+              {
+                "u": "0",
+                "v": "-Queda + 0.2",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Canopla",
+        "material": "Aço",
+        "in_plan": false,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-0.03",
+            "radius": "0.06",
+            "height": "0.03"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "CeilingLight",
+        "power": 60
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Pendente Ø35 60 VA",
+      "values": {},
+      "info": {
+        "description": "Luminária pendente sobre mesa ou bancada"
+      }
+    },
+    {
+      "name": "Pendente Ø50 60 VA",
+      "values": {
+        "Diametro": 0.5
+      },
+      "info": {
+        "description": "Luminária pendente sobre mesa ou bancada"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    }
+  ]
+}

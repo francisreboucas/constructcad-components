@@ -1,0 +1,67 @@
+{
+  "component": "Chuveiro elétrico",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Braco",
+        "value": 0.3,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Braço",
+        "material": "PVC",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.015",
+            "y": "-Braco",
+            "z": "Altura + 0.05",
+            "width": "0.03",
+            "depth": "Braco",
+            "height": "0.03"
+          }
+        }
+      },
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "-Braco",
+            "z": "Altura",
+            "radius": "0.09",
+            "height": "0.12"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 2,
+        "supply_weight": 0.1,
+        "hot_water": false
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Chuveiro elétrico",
+      "values": {},
+      "info": {
+        "description": "Aquecimento no ponto: ligar também um ponto de TUE de 5500 W ou 7500 W"
+      }
+    }
+  ]
+}

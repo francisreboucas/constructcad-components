@@ -1,0 +1,64 @@
+{
+  "component": "Spot LED de embutir",
+  "def": {
+    "kind": "Lighting",
+    "params": [
+      {
+        "name": "Diametro",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "Alumínio",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-0.02",
+            "radius": "Diametro / 2",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "CeilingLight",
+        "power": 18
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Spot LED Ø10",
+      "values": {},
+      "info": {
+        "description": "Spot de embutir em forro de gesso, até 18 VA"
+      }
+    },
+    {
+      "name": "Downlight LED Ø17",
+      "values": {
+        "Diametro": 0.17
+      },
+      "info": {
+        "description": "Downlight de embutir em forro de gesso, até 18 VA"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    }
+  ]
+}

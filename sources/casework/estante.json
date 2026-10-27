@@ -1,0 +1,166 @@
+{
+  "component": "Estante",
+  "def": {
+    "kind": "Casework",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.3,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 1.8,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Lateral esquerda",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0",
+            "width": "0.02",
+            "depth": "Profundidade",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Lateral direita",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.02",
+            "y": "-Profundidade / 2",
+            "z": "0",
+            "width": "0.02",
+            "depth": "Profundidade",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Fundo",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "Profundidade / 2 - 0.006",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.006",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Prateleira 0",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2",
+            "z": "0.05",
+            "width": "Largura - 0.04",
+            "depth": "Profundidade - 0.006",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Prateleira 1",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2",
+            "z": "1 * (Altura - 0.07) / 4 + 0.05",
+            "width": "Largura - 0.04",
+            "depth": "Profundidade - 0.006",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Prateleira 2",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2",
+            "z": "2 * (Altura - 0.07) / 4 + 0.05",
+            "width": "Largura - 0.04",
+            "depth": "Profundidade - 0.006",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Prateleira 3",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2",
+            "z": "3 * (Altura - 0.07) / 4 + 0.05",
+            "width": "Largura - 0.04",
+            "depth": "Profundidade - 0.006",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Prateleira 4",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2",
+            "z": "Altura - 0.02",
+            "width": "Largura - 0.04",
+            "depth": "Profundidade - 0.006",
+            "height": "0.02"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Estante 80 cm",
+      "values": {},
+      "info": {
+        "description": "Estante aberta com 5 prateleiras"
+      }
+    },
+    {
+      "name": "Estante 120 cm",
+      "values": {
+        "Largura": 1.2
+      },
+      "info": {
+        "description": "Estante aberta com 5 prateleiras"
+      }
+    }
+  ]
+}

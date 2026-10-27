@@ -1,0 +1,145 @@
+{
+  "component": "Cadeira com encosto",
+  "def": {
+    "kind": "Furniture",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.45,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.5,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "AlturaAssento",
+        "value": 0.45,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.9,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Assento",
+        "material": "Tecido",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "AlturaAssento - 0.05",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Encosto",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "Profundidade / 2 - 0.03",
+            "z": "AlturaAssento",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura - AlturaAssento"
+          }
+        }
+      },
+      {
+        "name": "Perna 1",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "-Profundidade / 2 + 0.02",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.04",
+            "height": "AlturaAssento - 0.05"
+          }
+        }
+      },
+      {
+        "name": "Perna 2",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.02 - 0.04",
+            "y": "-Profundidade / 2 + 0.02",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.04",
+            "height": "AlturaAssento - 0.05"
+          }
+        }
+      },
+      {
+        "name": "Perna 3",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.02",
+            "y": "Profundidade / 2 - 0.02 - 0.04",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.04",
+            "height": "AlturaAssento - 0.05"
+          }
+        }
+      },
+      {
+        "name": "Perna 4",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.02 - 0.04",
+            "y": "Profundidade / 2 - 0.02 - 0.04",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.04",
+            "height": "AlturaAssento - 0.05"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Cadeira de jantar",
+      "values": {},
+      "info": {
+        "description": "Cadeira com assento estofado"
+      }
+    },
+    {
+      "name": "Cadeira de escritório",
+      "values": {
+        "Largura": 0.6,
+        "Profundidade": 0.6,
+        "AlturaAssento": 0.48,
+        "Altura": 1.0
+      },
+      "info": {
+        "description": "Cadeira de trabalho"
+      }
+    }
+  ]
+}

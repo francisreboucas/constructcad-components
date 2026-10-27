@@ -1,0 +1,88 @@
+{
+  "component": "Bidê",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.36,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.53,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.4,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Pé",
+        "material": "Louça",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.11",
+            "y": "-Profundidade / 2 + 0.12",
+            "z": "0",
+            "width": "0.22",
+            "depth": "Profundidade - 0.2",
+            "height": "0.2"
+          }
+        }
+      },
+      {
+        "name": "Bacia",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "radius": "Largura / 2",
+            "height": "Altura - 0.2"
+          }
+        }
+      },
+      {
+        "name": "Corpo",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "width": "Largura",
+            "depth": "Profundidade - Largura / 2",
+            "height": "Altura - 0.2"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 1,
+        "supply_weight": 0.1,
+        "hot_water": true
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Bidê",
+      "values": {},
+      "info": {
+        "description": "Bidê de louça"
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+(
+  format_version: 1,
+  generator: "ConstructCAD 0.5.0",
+  component: "Spot LED de embutir",
+  def: (
+    kind: Lighting,
+    params: [
+      (
+        name: "Diametro",
+        value: 0.1,
+        kind: Length,
+        instance: false,
+      ),
+    ],
+    items: [
+      (
+        name: "Corpo",
+        shape: Cylinder(
+          x: "0",
+          y: "0",
+          z: "-0.02",
+          radius: "Diametro / 2",
+          height: "0.02",
+        ),
+        material: "Alumínio",
+        in_plan: true,
+      ),
+    ],
+    mep: Some(Device(
+      device: CeilingLight,
+      power: 18.0,
+    )),
+  ),
+  types: [
+    (
+      name: "Spot LED Ø10",
+      values: {
+        "Diametro": 0.1,
+      },
+      info: (
+        type_mark: "",
+        description: "Spot de embutir em forro de gesso, até 18 VA",
+        manufacturer: "",
+        model: "",
+        url: "",
+        keynote: "",
+        classification: "",
+        fire_rating: "",
+        comments: "",
+        cost: None,
+      ),
+    ),
+    (
+      name: "Downlight LED Ø17",
+      values: {
+        "Diametro": 0.17,
+      },
+      info: (
+        type_mark: "",
+        description: "Downlight de embutir em forro de gesso, até 18 VA",
+        manufacturer: "",
+        model: "",
+        url: "",
+        keynote: "",
+        classification: "",
+        fire_rating: "",
+        comments: "",
+        cost: None,
+      ),
+    ),
+  ],
+  materials: [
+    (
+      name: "Alumínio",
+      color: (200, 200, 205),
+      identity: (
+        description: "",
+        class: Generic,
+        comments: "",
+        keywords: "",
+        manufacturer: "",
+        model: "",
+        cost: None,
+        url: "",
+        keynote: "",
+        mark: "",
+      ),
+      graphics: (
+        use_appearance: false,
+        transparency: 0.0,
+        surface: (
+          foreground: r#None,
+          foreground_color: (0, 0, 0),
+          background: r#None,
+          background_color: (255, 255, 255),
+        ),
+        cut: (
+          foreground: r#None,
+          foreground_color: (0, 0, 0),
+          background: r#None,
+          background_color: (255, 255, 255),
+        ),
+      ),
+      appearance: (
+        color: (200, 200, 205),
+        finish: Matte,
+        description: "",
+      ),
+      physical: (
+        behavior: Isotropic,
+        density: None,
+        thermal_conductivity: None,
+        specific_heat: None,
+        thermal_expansion: None,
+        youngs_modulus: None,
+        poisson: None,
+        compressive_strength: None,
+        tensile_strength: None,
+      ),
+    ),
+  ],
+)

@@ -1,0 +1,52 @@
+{
+  "component": "Tomada de uso específico 3500 VA",
+  "def": {
+    "kind": "Electrical",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.03",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "DedicatedOutlet",
+        "power": 3500
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "TUE 3500 VA",
+      "values": {},
+      "info": {
+        "description": "Forno elétrico, torneira elétrica, ar-condicionado 24000 BTU/h"
+      }
+    }
+  ]
+}

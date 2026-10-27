@@ -1,0 +1,61 @@
+{
+  "component": "Tomada de uso geral 100 VA",
+  "def": {
+    "kind": "Electrical",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.03",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "Outlet",
+        "power": 100
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "TUG 100 VA 4x2",
+      "values": {},
+      "info": {
+        "description": "Tomada 2P+T 10 A em caixa 4x2 (NBR 14136)"
+      }
+    },
+    {
+      "name": "TUG 100 VA 4x4 dupla",
+      "values": {
+        "Largura": 0.1
+      },
+      "info": {
+        "description": "Duas tomadas 2P+T 10 A em caixa 4x4"
+      }
+    }
+  ]
+}

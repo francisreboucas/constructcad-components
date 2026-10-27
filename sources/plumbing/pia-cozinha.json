@@ -1,0 +1,151 @@
+{
+  "component": "Pia de cozinha com bancada",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.2,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.55,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.9,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Gabinete",
+        "material": "MDF branco",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + 0.03",
+            "z": "0.1",
+            "width": "Largura",
+            "depth": "Profundidade - 0.03",
+            "height": "Altura - 0.13"
+          }
+        }
+      },
+      {
+        "name": "Bancada",
+        "material": "Granito",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "Altura - 0.03",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "0.03"
+          }
+        }
+      },
+      {
+        "name": "Cuba",
+        "material": "Aço inox",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-0.25",
+            "y": "-0.2",
+            "z": "Altura - 0.2",
+            "width": "0.5",
+            "depth": "0.4",
+            "height": "0.17"
+          }
+        }
+      },
+      {
+        "name": "Cuba vazio",
+        "material": "Aço inox",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.24",
+            "y": "-0.19",
+            "z": "Altura - 0.19",
+            "width": "0.48",
+            "depth": "0.38",
+            "height": "0.2"
+          }
+        },
+        "void": true
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 3,
+        "supply_weight": 0.7,
+        "hot_water": true
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Pia cozinha 120 cm",
+      "values": {
+        "Largura": 1.2
+      },
+      "info": {
+        "description": "Bancada de granito com cuba inox e gabinete"
+      }
+    },
+    {
+      "name": "Pia cozinha 150 cm",
+      "values": {
+        "Largura": 1.5
+      },
+      "info": {
+        "description": "Bancada de granito com cuba inox e gabinete"
+      }
+    },
+    {
+      "name": "Pia cozinha 200 cm",
+      "values": {
+        "Largura": 2.0
+      },
+      "info": {
+        "description": "Bancada de granito com cuba inox e gabinete"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Aço inox",
+      "color": [
+        190,
+        195,
+        200
+      ]
+    },
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    },
+    {
+      "name": "MDF branco",
+      "color": [
+        240,
+        240,
+        235
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "component": "Mesa retangular",
+  "def": {
+    "kind": "Furniture",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.2,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.75,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Tampo",
+        "value": 0.03,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Tampo",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "Altura - Tampo",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Tampo"
+          }
+        }
+      },
+      {
+        "name": "Perna 1",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.03",
+            "y": "-Profundidade / 2 + 0.03",
+            "z": "0",
+            "width": "0.05",
+            "depth": "0.05",
+            "height": "Altura - Tampo"
+          }
+        }
+      },
+      {
+        "name": "Perna 2",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.03 - 0.05",
+            "y": "-Profundidade / 2 + 0.03",
+            "z": "0",
+            "width": "0.05",
+            "depth": "0.05",
+            "height": "Altura - Tampo"
+          }
+        }
+      },
+      {
+        "name": "Perna 3",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.03",
+            "y": "Profundidade / 2 - 0.03 - 0.05",
+            "z": "0",
+            "width": "0.05",
+            "depth": "0.05",
+            "height": "Altura - Tampo"
+          }
+        }
+      },
+      {
+        "name": "Perna 4",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.03 - 0.05",
+            "y": "Profundidade / 2 - 0.03 - 0.05",
+            "z": "0",
+            "width": "0.05",
+            "depth": "0.05",
+            "height": "Altura - Tampo"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Mesa retangular 120x80",
+      "values": {
+        "Largura": 1.2,
+        "Profundidade": 0.8
+      },
+      "info": {
+        "description": "Mesa de jantar, 4 lugares"
+      }
+    },
+    {
+      "name": "Mesa retangular 160x90",
+      "values": {
+        "Largura": 1.6,
+        "Profundidade": 0.9
+      },
+      "info": {
+        "description": "Mesa de jantar, 6 lugares"
+      }
+    },
+    {
+      "name": "Mesa retangular 200x100",
+      "values": {
+        "Largura": 2.0,
+        "Profundidade": 1.0
+      },
+      "info": {
+        "description": "Mesa de jantar, 8 lugares"
+      }
+    },
+    {
+      "name": "Mesa retangular 240x100",
+      "values": {
+        "Largura": 2.4,
+        "Profundidade": 1.0
+      },
+      "info": {
+        "description": "Mesa de jantar, 10 lugares"
+      }
+    }
+  ]
+}

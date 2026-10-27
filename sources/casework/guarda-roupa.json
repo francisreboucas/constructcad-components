@@ -1,0 +1,96 @@
+{
+  "component": "Guarda-roupa",
+  "def": {
+    "kind": "Casework",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.5,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.3,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Rodapé",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + 0.05",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Profundidade - 0.05",
+            "height": "0.08"
+          }
+        }
+      },
+      {
+        "name": "Corpo",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0.08",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Altura - 0.08"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Guarda-roupa 2 portas 100 cm",
+      "values": {
+        "Largura": 1.0
+      },
+      "info": {
+        "description": ""
+      }
+    },
+    {
+      "name": "Guarda-roupa 3 portas 150 cm",
+      "values": {
+        "Largura": 1.5
+      },
+      "info": {
+        "description": ""
+      }
+    },
+    {
+      "name": "Guarda-roupa 4 portas 200 cm",
+      "values": {
+        "Largura": 2.0
+      },
+      "info": {
+        "description": ""
+      }
+    },
+    {
+      "name": "Guarda-roupa 6 portas 270 cm",
+      "values": {
+        "Largura": 2.7
+      },
+      "info": {
+        "description": ""
+      }
+    }
+  ]
+}

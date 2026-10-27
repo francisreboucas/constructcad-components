@@ -1,0 +1,138 @@
+{
+  "component": "Sofá estofado",
+  "def": {
+    "kind": "Furniture",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.9,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.85,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "AlturaAssento",
+        "value": 0.42,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Braco",
+        "value": 0.18,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Base",
+        "material": "Tecido",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "AlturaAssento"
+          }
+        }
+      },
+      {
+        "name": "Encosto",
+        "material": "Tecido",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "Profundidade / 2 - 0.2",
+            "z": "AlturaAssento",
+            "width": "Largura",
+            "depth": "0.2",
+            "height": "Altura - AlturaAssento"
+          }
+        }
+      },
+      {
+        "name": "Braço esquerdo",
+        "material": "Tecido",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "AlturaAssento",
+            "width": "Braco",
+            "depth": "Profundidade - 0.2",
+            "height": "0.22"
+          }
+        }
+      },
+      {
+        "name": "Braço direito",
+        "material": "Tecido",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - Braco",
+            "y": "-Profundidade / 2",
+            "z": "AlturaAssento",
+            "width": "Braco",
+            "depth": "Profundidade - 0.2",
+            "height": "0.22"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Poltrona 85 cm",
+      "values": {
+        "Largura": 0.85
+      },
+      "info": {
+        "description": "Poltrona de 1 lugar"
+      }
+    },
+    {
+      "name": "Sofá 2 lugares 160 cm",
+      "values": {
+        "Largura": 1.6
+      },
+      "info": {
+        "description": "Sofá de 2 lugares"
+      }
+    },
+    {
+      "name": "Sofá 3 lugares 210 cm",
+      "values": {
+        "Largura": 2.1
+      },
+      "info": {
+        "description": "Sofá de 3 lugares"
+      }
+    },
+    {
+      "name": "Sofá 4 lugares 260 cm",
+      "values": {
+        "Largura": 2.6
+      },
+      "info": {
+        "description": "Sofá de 4 lugares"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "component": "Caixa de gordura",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Diametro",
+        "value": 0.4,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Fundo",
+        "value": 0.5,
+        "kind": "Length",
+        "instance": true
+      }
+    ],
+    "items": [
+      {
+        "name": "Caixa",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-Fundo - 0.06",
+            "radius": "Diametro / 2 + 0.03",
+            "height": "Fundo + 0.06"
+          }
+        }
+      },
+      {
+        "name": "Interior vazio",
+        "material": "PVC",
+        "in_plan": false,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-Fundo",
+            "radius": "Diametro / 2",
+            "height": "Fundo + 0.01"
+          }
+        },
+        "void": true
+      },
+      {
+        "name": "Tampa",
+        "material": "PVC",
+        "in_plan": false,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "0",
+            "radius": "Diametro / 2 + 0.05",
+            "height": "0.03"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Caixa de gordura simples Ø40",
+      "values": {},
+      "info": {
+        "description": "Caixa de gordura simples (CGS), 1 cozinha"
+      }
+    },
+    {
+      "name": "Caixa de gordura dupla Ø60",
+      "values": {
+        "Diametro": 0.6,
+        "Fundo": 0.6
+      },
+      "info": {
+        "description": "Caixa de gordura dupla (CGD), até 12 cozinhas"
+      }
+    }
+  ]
+}

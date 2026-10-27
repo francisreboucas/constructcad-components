@@ -1,0 +1,62 @@
+{
+  "component": "Ponto de telecomunicações",
+  "def": {
+    "kind": "Electrical",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.03",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Ponto de dados RJ45",
+      "values": {},
+      "info": {
+        "description": "Tomada de rede Cat6 em caixa 4x2"
+      }
+    },
+    {
+      "name": "Ponto de TV",
+      "values": {},
+      "info": {
+        "description": "Tomada coaxial para antena/TV a cabo"
+      }
+    },
+    {
+      "name": "Ponto dados + TV 4x4",
+      "values": {
+        "Largura": 0.1
+      },
+      "info": {
+        "description": "Tomada RJ45 e coaxial em caixa 4x4"
+      }
+    }
+  ]
+}

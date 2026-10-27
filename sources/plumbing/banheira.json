@@ -1,0 +1,95 @@
+{
+  "component": "Banheira",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.7,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.75,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.55,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Banheira",
+        "material": "Esmalte branco",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Interior vazio",
+        "material": "Esmalte branco",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.07",
+            "y": "-Profundidade / 2 + 0.07",
+            "z": "0.08",
+            "width": "Largura - 0.14",
+            "depth": "Profundidade - 0.14",
+            "height": "Altura"
+          }
+        },
+        "void": true
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 2,
+        "supply_weight": 1.0,
+        "hot_water": true
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Banheira 150x70",
+      "values": {
+        "Largura": 1.5,
+        "Profundidade": 0.7
+      },
+      "info": {
+        "description": "Banheira de embutir"
+      }
+    },
+    {
+      "name": "Banheira 170x75",
+      "values": {},
+      "info": {
+        "description": "Banheira de embutir"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Esmalte branco",
+      "color": [
+        245,
+        245,
+        245
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "component": "Cama com cabeceira",
+  "def": {
+    "kind": "Furniture",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.38,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Comprimento",
+        "value": 1.88,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "AlturaColchao",
+        "value": 0.25,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Estrado",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Comprimento / 2",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Comprimento",
+            "height": "0.3"
+          }
+        }
+      },
+      {
+        "name": "Colchão",
+        "material": "Tecido",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.01",
+            "y": "-Comprimento / 2 + 0.01",
+            "z": "0.3",
+            "width": "Largura - 0.02",
+            "depth": "Comprimento - 0.02",
+            "height": "AlturaColchao"
+          }
+        }
+      },
+      {
+        "name": "Cabeceira",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.03",
+            "y": "Comprimento / 2",
+            "z": "0",
+            "width": "Largura + 0.06",
+            "depth": "0.05",
+            "height": "1.1"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Cama solteiro 88x188",
+      "values": {
+        "Largura": 0.88,
+        "Comprimento": 1.88
+      },
+      "info": {
+        "description": "Colchão de solteiro"
+      }
+    },
+    {
+      "name": "Cama viúvo 128x188",
+      "values": {
+        "Largura": 1.28,
+        "Comprimento": 1.88
+      },
+      "info": {
+        "description": "Colchão de viúvo"
+      }
+    },
+    {
+      "name": "Cama casal 138x188",
+      "values": {
+        "Largura": 1.38,
+        "Comprimento": 1.88
+      },
+      "info": {
+        "description": "Colchão de casal padrão"
+      }
+    },
+    {
+      "name": "Cama queen 158x198",
+      "values": {
+        "Largura": 1.58,
+        "Comprimento": 1.98
+      },
+      "info": {
+        "description": "Colchão queen size"
+      }
+    },
+    {
+      "name": "Cama king 193x203",
+      "values": {
+        "Largura": 1.93,
+        "Comprimento": 2.03
+      },
+      "info": {
+        "description": "Colchão king size"
+      }
+    }
+  ]
+}

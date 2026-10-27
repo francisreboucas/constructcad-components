@@ -1,0 +1,75 @@
+{
+  "component": "Interruptor de embutir",
+  "def": {
+    "kind": "Electrical",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.03",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "Switch",
+        "power": 0
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Interruptor simples 1 tecla",
+      "values": {},
+      "info": {
+        "description": "Interruptor simples 10 A"
+      }
+    },
+    {
+      "name": "Interruptor simples 2 teclas",
+      "values": {},
+      "info": {
+        "description": "Interruptor simples 10 A, 2 seções"
+      }
+    },
+    {
+      "name": "Interruptor paralelo 1 tecla",
+      "values": {},
+      "info": {
+        "description": "Interruptor paralelo (three-way) 10 A"
+      }
+    },
+    {
+      "name": "Interruptor 3 teclas 4x4",
+      "values": {
+        "Largura": 0.1
+      },
+      "info": {
+        "description": "Interruptor simples 10 A, 3 seções"
+      }
+    }
+  ]
+}

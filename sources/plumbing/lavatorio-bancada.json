@@ -1,0 +1,121 @@
+{
+  "component": "Lavatório com bancada",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.5,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.85,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Bancada",
+        "material": "Granito",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "Altura - 0.03",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "0.03"
+          }
+        }
+      },
+      {
+        "name": "Cuba",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-0.25",
+            "y": "-0.17",
+            "z": "Altura - 0.18",
+            "width": "0.5",
+            "depth": "0.34",
+            "height": "0.15"
+          }
+        }
+      },
+      {
+        "name": "Cuba vazio",
+        "material": "Louça",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.23",
+            "y": "-0.15",
+            "z": "Altura - 0.16",
+            "width": "0.46",
+            "depth": "0.3",
+            "height": "0.2"
+          }
+        },
+        "void": true
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 1,
+        "supply_weight": 0.3,
+        "hot_water": true
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Lavatório bancada 80x50",
+      "values": {
+        "Largura": 0.8
+      },
+      "info": {
+        "description": "Cuba de embutir em bancada de granito"
+      }
+    },
+    {
+      "name": "Lavatório bancada 100x50",
+      "values": {
+        "Largura": 1.0
+      },
+      "info": {
+        "description": "Cuba de embutir em bancada de granito"
+      }
+    },
+    {
+      "name": "Lavatório bancada 120x55",
+      "values": {
+        "Largura": 1.2,
+        "Profundidade": 0.55
+      },
+      "info": {
+        "description": "Cuba de embutir em bancada de granito"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "component": "Balcão de cozinha",
+  "def": {
+    "kind": "Casework",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.9,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Rodapé",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + 0.05",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Profundidade - 0.05",
+            "height": "0.1"
+          }
+        }
+      },
+      {
+        "name": "Gabinete",
+        "material": "MDF branco",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0.1",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Altura - 0.13"
+          }
+        }
+      },
+      {
+        "name": "Tampo",
+        "material": "Granito",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 - 0.02",
+            "z": "Altura - 0.03",
+            "width": "Largura",
+            "depth": "Profundidade + 0.02",
+            "height": "0.03"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Balcão 40 cm",
+      "values": {
+        "Largura": 0.4
+      },
+      "info": {
+        "description": "Balcão inferior com tampo de granito"
+      }
+    },
+    {
+      "name": "Balcão 60 cm",
+      "values": {
+        "Largura": 0.6
+      },
+      "info": {
+        "description": "Balcão inferior com tampo de granito"
+      }
+    },
+    {
+      "name": "Balcão 80 cm",
+      "values": {
+        "Largura": 0.8
+      },
+      "info": {
+        "description": "Balcão inferior com tampo de granito"
+      }
+    },
+    {
+      "name": "Balcão 120 cm",
+      "values": {
+        "Largura": 1.2
+      },
+      "info": {
+        "description": "Balcão inferior com tampo de granito"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    },
+    {
+      "name": "MDF branco",
+      "color": [
+        240,
+        240,
+        235
+      ]
+    }
+  ]
+}

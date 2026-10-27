@@ -1,0 +1,52 @@
+{
+  "component": "Ponto de chuveiro elétrico 7500 W",
+  "def": {
+    "kind": "Electrical",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "PVC",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.03",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.03",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "DedicatedOutlet",
+        "power": 7500
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "TUE chuveiro 7500 W",
+      "values": {},
+      "info": {
+        "description": "Ponto para chuveiro elétrico 220 V; circuito exclusivo"
+      }
+    }
+  ]
+}

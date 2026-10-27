@@ -1,0 +1,70 @@
+{
+  "component": "Plafon de teto",
+  "def": {
+    "kind": "Lighting",
+    "params": [
+      {
+        "name": "Diametro",
+        "value": 0.3,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.06,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "Esmalte branco",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "-Altura",
+            "radius": "Diametro / 2",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Device": {
+        "device": "CeilingLight",
+        "power": 100
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Plafon Ø30 100 VA",
+      "values": {},
+      "info": {
+        "description": "Ponto de luz no teto"
+      }
+    },
+    {
+      "name": "Plafon Ø40 100 VA",
+      "values": {
+        "Diametro": 0.4
+      },
+      "info": {
+        "description": "Ponto de luz no teto"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Esmalte branco",
+      "color": [
+        245,
+        245,
+        245
+      ]
+    }
+  ]
+}

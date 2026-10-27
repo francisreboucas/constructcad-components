@@ -1,0 +1,80 @@
+{
+  "component": "Máquina de lavar roupa",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.65,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.95,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Corpo",
+        "material": "Esmalte branco",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "0",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 3,
+        "supply_weight": 1.0,
+        "hot_water": false
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Máquina de lavar 12 kg",
+      "values": {},
+      "info": {
+        "description": "Ponto de água fria e esgoto; prever TUE de 1000 VA"
+      }
+    },
+    {
+      "name": "Máquina de lavar 17 kg",
+      "values": {
+        "Largura": 0.68,
+        "Profundidade": 0.72,
+        "Altura": 1.05
+      },
+      "info": {
+        "description": "Ponto de água fria e esgoto; prever TUE de 1500 VA"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Esmalte branco",
+      "color": [
+        245,
+        245,
+        245
+      ]
+    }
+  ]
+}

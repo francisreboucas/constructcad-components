@@ -1,0 +1,114 @@
+{
+  "component": "Bacia sanitária com caixa acoplada",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.38,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.65,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.78,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Pé",
+        "material": "Louça",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.11",
+            "y": "-Profundidade / 2 + 0.15",
+            "z": "0",
+            "width": "0.22",
+            "depth": "Profundidade - 0.33",
+            "height": "0.25"
+          }
+        }
+      },
+      {
+        "name": "Bacia",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "radius": "Largura / 2",
+            "height": "0.2"
+          }
+        }
+      },
+      {
+        "name": "Corpo",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "width": "Largura",
+            "depth": "Profundidade - Largura / 2 - 0.18",
+            "height": "0.2"
+          }
+        }
+      },
+      {
+        "name": "Caixa acoplada",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "Profundidade / 2 - 0.18",
+            "z": "0",
+            "width": "Largura",
+            "depth": "0.18",
+            "height": "Altura"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 6,
+        "supply_weight": 0.3,
+        "hot_water": false
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Bacia c/ caixa acoplada",
+      "values": {},
+      "info": {
+        "description": "Bacia convencional com caixa acoplada 6 L"
+      }
+    },
+    {
+      "name": "Bacia c/ caixa acoplada PNE",
+      "values": {
+        "Largura": 0.4,
+        "Profundidade": 0.7,
+        "Altura": 0.82
+      },
+      "info": {
+        "description": "Bacia para pessoa com deficiência (assento a 0,46 m)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "component": "Caixa d'água de polietileno",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "RaioBase",
+        "value": 0.48,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "RaioTopo",
+        "value": 0.61,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.73,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Reservatório",
+        "material": "Polietileno",
+        "in_plan": true,
+        "shape": {
+          "Revolution": {
+            "plane": "Front",
+            "offset": "0",
+            "axis": "0",
+            "angle": "360",
+            "points": [
+              {
+                "u": "0",
+                "v": "0",
+                "radius": ""
+              },
+              {
+                "u": "RaioBase",
+                "v": "0",
+                "radius": ""
+              },
+              {
+                "u": "RaioTopo",
+                "v": "Altura - 0.08",
+                "radius": ""
+              },
+              {
+                "u": "0",
+                "v": "Altura - 0.08",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Tampa",
+        "material": "Polietileno",
+        "in_plan": false,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "0",
+            "z": "Altura - 0.08",
+            "radius": "RaioTopo + 0.03",
+            "height": "0.08"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Caixa d'água 310 L",
+      "values": {
+        "RaioBase": 0.42,
+        "RaioTopo": 0.52,
+        "Altura": 0.62
+      },
+      "info": {
+        "description": "Reservatório de polietileno"
+      }
+    },
+    {
+      "name": "Caixa d'água 500 L",
+      "values": {
+        "RaioBase": 0.48,
+        "RaioTopo": 0.61,
+        "Altura": 0.73
+      },
+      "info": {
+        "description": "Reservatório de polietileno"
+      }
+    },
+    {
+      "name": "Caixa d'água 1000 L",
+      "values": {
+        "RaioBase": 0.6,
+        "RaioTopo": 0.76,
+        "Altura": 0.86
+      },
+      "info": {
+        "description": "Reservatório de polietileno"
+      }
+    },
+    {
+      "name": "Caixa d'água 2000 L",
+      "values": {
+        "RaioBase": 0.78,
+        "RaioTopo": 0.96,
+        "Altura": 1.12
+      },
+      "info": {
+        "description": "Reservatório de polietileno"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Polietileno",
+      "color": [
+        40,
+        90,
+        160
+      ]
+    }
+  ]
+}

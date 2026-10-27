@@ -1,0 +1,1445 @@
+{
+  "format_version": 1,
+  "components": [
+    {
+      "file": "components/casework/armario-aereo.ccomp",
+      "component": "Armário aéreo",
+      "kind": "Casework",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura",
+        "Elevacao"
+      ],
+      "types": [
+        {
+          "name": "Aéreo 60 cm",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.35,
+            "Altura": 0.7,
+            "Elevacao": 1.5
+          },
+          "description": "Armário suspenso de cozinha"
+        },
+        {
+          "name": "Aéreo 80 cm",
+          "values": {
+            "Largura": 0.8,
+            "Profundidade": 0.35,
+            "Altura": 0.7,
+            "Elevacao": 1.5
+          },
+          "description": "Armário suspenso de cozinha"
+        },
+        {
+          "name": "Aéreo 120 cm",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.35,
+            "Altura": 0.7,
+            "Elevacao": 1.5
+          },
+          "description": "Armário suspenso de cozinha"
+        }
+      ]
+    },
+    {
+      "file": "components/casework/balcao-cozinha.ccomp",
+      "component": "Balcão de cozinha",
+      "kind": "Casework",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Balcão 40 cm",
+          "values": {
+            "Largura": 0.4,
+            "Profundidade": 0.6,
+            "Altura": 0.9
+          },
+          "description": "Balcão inferior com tampo de granito"
+        },
+        {
+          "name": "Balcão 60 cm",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.6,
+            "Altura": 0.9
+          },
+          "description": "Balcão inferior com tampo de granito"
+        },
+        {
+          "name": "Balcão 80 cm",
+          "values": {
+            "Largura": 0.8,
+            "Profundidade": 0.6,
+            "Altura": 0.9
+          },
+          "description": "Balcão inferior com tampo de granito"
+        },
+        {
+          "name": "Balcão 120 cm",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.6,
+            "Altura": 0.9
+          },
+          "description": "Balcão inferior com tampo de granito"
+        }
+      ]
+    },
+    {
+      "file": "components/casework/estante.ccomp",
+      "component": "Estante",
+      "kind": "Casework",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Estante 80 cm",
+          "values": {
+            "Largura": 0.8,
+            "Profundidade": 0.3,
+            "Altura": 1.8
+          },
+          "description": "Estante aberta com 5 prateleiras"
+        },
+        {
+          "name": "Estante 120 cm",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.3,
+            "Altura": 1.8
+          },
+          "description": "Estante aberta com 5 prateleiras"
+        }
+      ]
+    },
+    {
+      "file": "components/casework/guarda-roupa.ccomp",
+      "component": "Guarda-roupa",
+      "kind": "Casework",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Guarda-roupa 2 portas 100 cm",
+          "values": {
+            "Largura": 1.0,
+            "Profundidade": 0.6,
+            "Altura": 2.3
+          },
+          "description": ""
+        },
+        {
+          "name": "Guarda-roupa 3 portas 150 cm",
+          "values": {
+            "Largura": 1.5,
+            "Profundidade": 0.6,
+            "Altura": 2.3
+          },
+          "description": ""
+        },
+        {
+          "name": "Guarda-roupa 4 portas 200 cm",
+          "values": {
+            "Largura": 2.0,
+            "Profundidade": 0.6,
+            "Altura": 2.3
+          },
+          "description": ""
+        },
+        {
+          "name": "Guarda-roupa 6 portas 270 cm",
+          "values": {
+            "Largura": 2.7,
+            "Profundidade": 0.6,
+            "Altura": 2.3
+          },
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/interruptor.ccomp",
+      "component": "Interruptor de embutir",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "Switch",
+          "power": 0.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Interruptor simples 1 tecla",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Interruptor simples 10 A"
+        },
+        {
+          "name": "Interruptor simples 2 teclas",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Interruptor simples 10 A, 2 seções"
+        },
+        {
+          "name": "Interruptor paralelo 1 tecla",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Interruptor paralelo (three-way) 10 A"
+        },
+        {
+          "name": "Interruptor 3 teclas 4x4",
+          "values": {
+            "Largura": 0.1,
+            "Altura": 0.1
+          },
+          "description": "Interruptor simples 10 A, 3 seções"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/ponto-telecom.ccomp",
+      "component": "Ponto de telecomunicações",
+      "kind": "Electrical",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Ponto de dados RJ45",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Tomada de rede Cat6 em caixa 4x2"
+        },
+        {
+          "name": "Ponto de TV",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Tomada coaxial para antena/TV a cabo"
+        },
+        {
+          "name": "Ponto dados + TV 4x4",
+          "values": {
+            "Largura": 0.1,
+            "Altura": 0.1
+          },
+          "description": "Tomada RJ45 e coaxial em caixa 4x4"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/quadro-distribuicao.ccomp",
+      "component": "Quadro de distribuição (QDC)",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "Panel",
+          "power": 0.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Profundidade"
+      ],
+      "types": [
+        {
+          "name": "QD 12 disjuntores",
+          "values": {
+            "Largura": 0.3,
+            "Altura": 0.35,
+            "Profundidade": 0.1
+          },
+          "description": "Quadro de distribuição de embutir, 12 módulos DIN"
+        },
+        {
+          "name": "QD 24 disjuntores",
+          "values": {
+            "Largura": 0.4,
+            "Altura": 0.5,
+            "Profundidade": 0.1
+          },
+          "description": "Quadro de distribuição de embutir, 24 módulos DIN"
+        },
+        {
+          "name": "QD 36 disjuntores",
+          "values": {
+            "Largura": 0.45,
+            "Altura": 0.65,
+            "Profundidade": 0.1
+          },
+          "description": "Quadro de distribuição de embutir, 36 módulos DIN"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tue-1500va.ccomp",
+      "component": "Tomada de uso específico 1500 VA",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "DedicatedOutlet",
+          "power": 1500.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUE 1500 VA",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Micro-ondas, ar-condicionado até 12000 BTU/h, máquina de lavar"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tue-3500va.ccomp",
+      "component": "Tomada de uso específico 3500 VA",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "DedicatedOutlet",
+          "power": 3500.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUE 3500 VA",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Forno elétrico, torneira elétrica, ar-condicionado 24000 BTU/h"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tue-chuveiro-5500w.ccomp",
+      "component": "Ponto de chuveiro elétrico 5500 W",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "DedicatedOutlet",
+          "power": 5500.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUE chuveiro 5500 W",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Ponto para chuveiro elétrico 220 V; circuito exclusivo"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tue-chuveiro-7500w.ccomp",
+      "component": "Ponto de chuveiro elétrico 7500 W",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "DedicatedOutlet",
+          "power": 7500.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUE chuveiro 7500 W",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Ponto para chuveiro elétrico 220 V; circuito exclusivo"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tug-100va.ccomp",
+      "component": "Tomada de uso geral 100 VA",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "Outlet",
+          "power": 100.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUG 100 VA 4x2",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Tomada 2P+T 10 A em caixa 4x2 (NBR 14136)"
+        },
+        {
+          "name": "TUG 100 VA 4x4 dupla",
+          "values": {
+            "Largura": 0.1,
+            "Altura": 0.1
+          },
+          "description": "Duas tomadas 2P+T 10 A em caixa 4x4"
+        }
+      ]
+    },
+    {
+      "file": "components/electrical/tug-600va.ccomp",
+      "component": "Tomada de uso geral 600 VA",
+      "kind": "Electrical",
+      "mep": {
+        "Device": {
+          "device": "Outlet",
+          "power": 600.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "TUG 600 VA 4x2",
+          "values": {
+            "Largura": 0.06,
+            "Altura": 0.1
+          },
+          "description": "Tomada 2P+T 20 A para cozinha e área de serviço (NBR 5410: 3 primeiras a 600 VA)"
+        },
+        {
+          "name": "TUG 600 VA 4x4 dupla",
+          "values": {
+            "Largura": 0.1,
+            "Altura": 0.1
+          },
+          "description": "Duas tomadas 2P+T 20 A em caixa 4x4"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/cadeira.ccomp",
+      "component": "Cadeira com encosto",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "AlturaAssento",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Cadeira de jantar",
+          "values": {
+            "Largura": 0.45,
+            "Profundidade": 0.5,
+            "AlturaAssento": 0.45,
+            "Altura": 0.9
+          },
+          "description": "Cadeira com assento estofado"
+        },
+        {
+          "name": "Cadeira de escritório",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.6,
+            "AlturaAssento": 0.48,
+            "Altura": 1.0
+          },
+          "description": "Cadeira de trabalho"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/cama.ccomp",
+      "component": "Cama com cabeceira",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Comprimento",
+        "AlturaColchao"
+      ],
+      "types": [
+        {
+          "name": "Cama solteiro 88x188",
+          "values": {
+            "Largura": 0.88,
+            "Comprimento": 1.88,
+            "AlturaColchao": 0.25
+          },
+          "description": "Colchão de solteiro"
+        },
+        {
+          "name": "Cama viúvo 128x188",
+          "values": {
+            "Largura": 1.28,
+            "Comprimento": 1.88,
+            "AlturaColchao": 0.25
+          },
+          "description": "Colchão de viúvo"
+        },
+        {
+          "name": "Cama casal 138x188",
+          "values": {
+            "Largura": 1.38,
+            "Comprimento": 1.88,
+            "AlturaColchao": 0.25
+          },
+          "description": "Colchão de casal padrão"
+        },
+        {
+          "name": "Cama queen 158x198",
+          "values": {
+            "Largura": 1.58,
+            "Comprimento": 1.98,
+            "AlturaColchao": 0.25
+          },
+          "description": "Colchão queen size"
+        },
+        {
+          "name": "Cama king 193x203",
+          "values": {
+            "Largura": 1.93,
+            "Comprimento": 2.03,
+            "AlturaColchao": 0.25
+          },
+          "description": "Colchão king size"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/criado-mudo.ccomp",
+      "component": "Criado-mudo",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Criado-mudo 45 cm",
+          "values": {
+            "Largura": 0.45,
+            "Profundidade": 0.4,
+            "Altura": 0.55
+          },
+          "description": "Mesa de cabeceira com gaveta"
+        },
+        {
+          "name": "Criado-mudo 60 cm",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.4,
+            "Altura": 0.55
+          },
+          "description": "Mesa de cabeceira com gaveta"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/escrivaninha.ccomp",
+      "component": "Escrivaninha",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura",
+        "Gaveteiro"
+      ],
+      "types": [
+        {
+          "name": "Escrivaninha 100x50",
+          "values": {
+            "Largura": 1.0,
+            "Profundidade": 0.5,
+            "Altura": 0.75,
+            "Gaveteiro": 0.4
+          },
+          "description": "Escrivaninha com gaveteiro"
+        },
+        {
+          "name": "Escrivaninha 120x60",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.6,
+            "Altura": 0.75,
+            "Gaveteiro": 0.4
+          },
+          "description": "Escrivaninha com gaveteiro"
+        },
+        {
+          "name": "Escrivaninha 150x70",
+          "values": {
+            "Largura": 1.5,
+            "Profundidade": 0.7,
+            "Altura": 0.75,
+            "Gaveteiro": 0.4
+          },
+          "description": "Escrivaninha com gaveteiro"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/mesa-redonda.ccomp",
+      "component": "Mesa redonda",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Diametro",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Mesa redonda Ø90",
+          "values": {
+            "Diametro": 0.9,
+            "Altura": 0.75
+          },
+          "description": "Mesa redonda, 4 lugares"
+        },
+        {
+          "name": "Mesa redonda Ø120",
+          "values": {
+            "Diametro": 1.2,
+            "Altura": 0.75
+          },
+          "description": "Mesa redonda, 6 lugares"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/mesa-retangular.ccomp",
+      "component": "Mesa retangular",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura",
+        "Tampo"
+      ],
+      "types": [
+        {
+          "name": "Mesa retangular 120x80",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.8,
+            "Altura": 0.75,
+            "Tampo": 0.03
+          },
+          "description": "Mesa de jantar, 4 lugares"
+        },
+        {
+          "name": "Mesa retangular 160x90",
+          "values": {
+            "Largura": 1.6,
+            "Profundidade": 0.9,
+            "Altura": 0.75,
+            "Tampo": 0.03
+          },
+          "description": "Mesa de jantar, 6 lugares"
+        },
+        {
+          "name": "Mesa retangular 200x100",
+          "values": {
+            "Largura": 2.0,
+            "Profundidade": 1.0,
+            "Altura": 0.75,
+            "Tampo": 0.03
+          },
+          "description": "Mesa de jantar, 8 lugares"
+        },
+        {
+          "name": "Mesa retangular 240x100",
+          "values": {
+            "Largura": 2.4,
+            "Profundidade": 1.0,
+            "Altura": 0.75,
+            "Tampo": 0.03
+          },
+          "description": "Mesa de jantar, 10 lugares"
+        }
+      ]
+    },
+    {
+      "file": "components/furniture/sofa.ccomp",
+      "component": "Sofá estofado",
+      "kind": "Furniture",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura",
+        "AlturaAssento",
+        "Braco"
+      ],
+      "types": [
+        {
+          "name": "Poltrona 85 cm",
+          "values": {
+            "Largura": 0.85,
+            "Profundidade": 0.9,
+            "Altura": 0.85,
+            "AlturaAssento": 0.42,
+            "Braco": 0.18
+          },
+          "description": "Poltrona de 1 lugar"
+        },
+        {
+          "name": "Sofá 2 lugares 160 cm",
+          "values": {
+            "Largura": 1.6,
+            "Profundidade": 0.9,
+            "Altura": 0.85,
+            "AlturaAssento": 0.42,
+            "Braco": 0.18
+          },
+          "description": "Sofá de 2 lugares"
+        },
+        {
+          "name": "Sofá 3 lugares 210 cm",
+          "values": {
+            "Largura": 2.1,
+            "Profundidade": 0.9,
+            "Altura": 0.85,
+            "AlturaAssento": 0.42,
+            "Braco": 0.18
+          },
+          "description": "Sofá de 3 lugares"
+        },
+        {
+          "name": "Sofá 4 lugares 260 cm",
+          "values": {
+            "Largura": 2.6,
+            "Profundidade": 0.9,
+            "Altura": 0.85,
+            "AlturaAssento": 0.42,
+            "Braco": 0.18
+          },
+          "description": "Sofá de 4 lugares"
+        }
+      ]
+    },
+    {
+      "file": "components/lighting/arandela-led.ccomp",
+      "component": "Arandela LED",
+      "kind": "Lighting",
+      "mep": {
+        "Device": {
+          "device": "WallLight",
+          "power": 20.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Profundidade"
+      ],
+      "types": [
+        {
+          "name": "Arandela LED 20 VA",
+          "values": {
+            "Largura": 0.12,
+            "Altura": 0.12,
+            "Profundidade": 0.08
+          },
+          "description": "Arandela de parede interna"
+        },
+        {
+          "name": "Arandela externa LED 20 VA",
+          "values": {
+            "Largura": 0.15,
+            "Altura": 0.2,
+            "Profundidade": 0.1
+          },
+          "description": "Arandela de parede, IP65"
+        }
+      ]
+    },
+    {
+      "file": "components/lighting/luminaria-linear.ccomp",
+      "component": "Luminária linear LED",
+      "kind": "Lighting",
+      "mep": {
+        "Device": {
+          "device": "CeilingLight",
+          "power": 40.0
+        }
+      },
+      "parameters": [
+        "Comprimento",
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Linear LED 60 cm",
+          "values": {
+            "Comprimento": 0.6,
+            "Largura": 0.08,
+            "Altura": 0.05
+          },
+          "description": "Luminária de sobrepor, carga prevista 40 VA"
+        },
+        {
+          "name": "Linear LED 120 cm",
+          "values": {
+            "Comprimento": 1.2,
+            "Largura": 0.08,
+            "Altura": 0.05
+          },
+          "description": "Luminária de sobrepor, carga prevista 40 VA"
+        }
+      ]
+    },
+    {
+      "file": "components/lighting/pendente.ccomp",
+      "component": "Luminária pendente",
+      "kind": "Lighting",
+      "mep": {
+        "Device": {
+          "device": "CeilingLight",
+          "power": 60.0
+        }
+      },
+      "parameters": [
+        "Diametro",
+        "Queda"
+      ],
+      "types": [
+        {
+          "name": "Pendente Ø35 60 VA",
+          "values": {
+            "Diametro": 0.35,
+            "Queda": 0.8
+          },
+          "description": "Luminária pendente sobre mesa ou bancada"
+        },
+        {
+          "name": "Pendente Ø50 60 VA",
+          "values": {
+            "Diametro": 0.5,
+            "Queda": 0.8
+          },
+          "description": "Luminária pendente sobre mesa ou bancada"
+        }
+      ]
+    },
+    {
+      "file": "components/lighting/plafon.ccomp",
+      "component": "Plafon de teto",
+      "kind": "Lighting",
+      "mep": {
+        "Device": {
+          "device": "CeilingLight",
+          "power": 100.0
+        }
+      },
+      "parameters": [
+        "Diametro",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Plafon Ø30 100 VA",
+          "values": {
+            "Diametro": 0.3,
+            "Altura": 0.06
+          },
+          "description": "Ponto de luz no teto"
+        },
+        {
+          "name": "Plafon Ø40 100 VA",
+          "values": {
+            "Diametro": 0.4,
+            "Altura": 0.06
+          },
+          "description": "Ponto de luz no teto"
+        }
+      ]
+    },
+    {
+      "file": "components/lighting/spot-embutido.ccomp",
+      "component": "Spot LED de embutir",
+      "kind": "Lighting",
+      "mep": {
+        "Device": {
+          "device": "CeilingLight",
+          "power": 18.0
+        }
+      },
+      "parameters": [
+        "Diametro"
+      ],
+      "types": [
+        {
+          "name": "Spot LED Ø10",
+          "values": {
+            "Diametro": 0.1
+          },
+          "description": "Spot de embutir em forro de gesso, até 18 VA"
+        },
+        {
+          "name": "Downlight LED Ø17",
+          "values": {
+            "Diametro": 0.17
+          },
+          "description": "Downlight de embutir em forro de gesso, até 18 VA"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/bacia-caixa-acoplada.ccomp",
+      "component": "Bacia sanitária com caixa acoplada",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 6.0,
+          "hot_water": false,
+          "supply_weight": 0.3
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Bacia c/ caixa acoplada",
+          "values": {
+            "Largura": 0.38,
+            "Profundidade": 0.65,
+            "Altura": 0.78
+          },
+          "description": "Bacia convencional com caixa acoplada 6 L"
+        },
+        {
+          "name": "Bacia c/ caixa acoplada PNE",
+          "values": {
+            "Largura": 0.4,
+            "Profundidade": 0.7,
+            "Altura": 0.82
+          },
+          "description": "Bacia para pessoa com deficiência (assento a 0,46 m)"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/bacia-valvula.ccomp",
+      "component": "Bacia sanitária com válvula de descarga",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 6.0,
+          "hot_water": false,
+          "supply_weight": 32.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade"
+      ],
+      "types": [
+        {
+          "name": "Bacia c/ válvula de descarga",
+          "values": {
+            "Largura": 0.38,
+            "Profundidade": 0.55
+          },
+          "description": "Bacia convencional com válvula de descarga"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/banheira.ccomp",
+      "component": "Banheira",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 2.0,
+          "hot_water": true,
+          "supply_weight": 1.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Banheira 150x70",
+          "values": {
+            "Largura": 1.5,
+            "Profundidade": 0.7,
+            "Altura": 0.55
+          },
+          "description": "Banheira de embutir"
+        },
+        {
+          "name": "Banheira 170x75",
+          "values": {
+            "Largura": 1.7,
+            "Profundidade": 0.75,
+            "Altura": 0.55
+          },
+          "description": "Banheira de embutir"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/bide.ccomp",
+      "component": "Bidê",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 1.0,
+          "hot_water": true,
+          "supply_weight": 0.1
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Bidê",
+          "values": {
+            "Largura": 0.36,
+            "Profundidade": 0.53,
+            "Altura": 0.4
+          },
+          "description": "Bidê de louça"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/caixa-dagua.ccomp",
+      "component": "Caixa d'água de polietileno",
+      "kind": "Plumbing",
+      "mep": null,
+      "parameters": [
+        "RaioBase",
+        "RaioTopo",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Caixa d'água 310 L",
+          "values": {
+            "RaioBase": 0.42,
+            "RaioTopo": 0.52,
+            "Altura": 0.62
+          },
+          "description": "Reservatório de polietileno"
+        },
+        {
+          "name": "Caixa d'água 500 L",
+          "values": {
+            "RaioBase": 0.48,
+            "RaioTopo": 0.61,
+            "Altura": 0.73
+          },
+          "description": "Reservatório de polietileno"
+        },
+        {
+          "name": "Caixa d'água 1000 L",
+          "values": {
+            "RaioBase": 0.6,
+            "RaioTopo": 0.76,
+            "Altura": 0.86
+          },
+          "description": "Reservatório de polietileno"
+        },
+        {
+          "name": "Caixa d'água 2000 L",
+          "values": {
+            "RaioBase": 0.78,
+            "RaioTopo": 0.96,
+            "Altura": 1.12
+          },
+          "description": "Reservatório de polietileno"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/caixa-gordura.ccomp",
+      "component": "Caixa de gordura",
+      "kind": "Plumbing",
+      "mep": null,
+      "parameters": [
+        "Diametro",
+        "Fundo"
+      ],
+      "types": [
+        {
+          "name": "Caixa de gordura simples Ø40",
+          "values": {
+            "Diametro": 0.4,
+            "Fundo": 0.5
+          },
+          "description": "Caixa de gordura simples (CGS), 1 cozinha"
+        },
+        {
+          "name": "Caixa de gordura dupla Ø60",
+          "values": {
+            "Diametro": 0.6,
+            "Fundo": 0.6
+          },
+          "description": "Caixa de gordura dupla (CGD), até 12 cozinhas"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/caixa-inspecao.ccomp",
+      "component": "Caixa de inspeção",
+      "kind": "Plumbing",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Fundo"
+      ],
+      "types": [
+        {
+          "name": "Caixa de inspeção 60x60",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.6,
+            "Fundo": 0.6
+          },
+          "description": "Caixa de inspeção de esgoto em alvenaria/concreto"
+        },
+        {
+          "name": "Caixa de inspeção 80x80",
+          "values": {
+            "Largura": 0.8,
+            "Profundidade": 0.8,
+            "Fundo": 0.6
+          },
+          "description": "Caixa de inspeção de esgoto em alvenaria/concreto"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/chuveiro-eletrico.ccomp",
+      "component": "Chuveiro elétrico",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 2.0,
+          "hot_water": false,
+          "supply_weight": 0.1
+        }
+      },
+      "parameters": [
+        "Altura",
+        "Braco"
+      ],
+      "types": [
+        {
+          "name": "Chuveiro elétrico",
+          "values": {
+            "Altura": 2.1,
+            "Braco": 0.3
+          },
+          "description": "Aquecimento no ponto: ligar também um ponto de TUE de 5500 W ou 7500 W"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/lavatorio-bancada.ccomp",
+      "component": "Lavatório com bancada",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 1.0,
+          "hot_water": true,
+          "supply_weight": 0.3
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Lavatório bancada 80x50",
+          "values": {
+            "Largura": 0.8,
+            "Profundidade": 0.5,
+            "Altura": 0.85
+          },
+          "description": "Cuba de embutir em bancada de granito"
+        },
+        {
+          "name": "Lavatório bancada 100x50",
+          "values": {
+            "Largura": 1.0,
+            "Profundidade": 0.5,
+            "Altura": 0.85
+          },
+          "description": "Cuba de embutir em bancada de granito"
+        },
+        {
+          "name": "Lavatório bancada 120x55",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.55,
+            "Altura": 0.85
+          },
+          "description": "Cuba de embutir em bancada de granito"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/lavatorio-suspenso.ccomp",
+      "component": "Lavatório suspenso",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 1.0,
+          "hot_water": true,
+          "supply_weight": 0.3
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Lavatório suspenso 45 cm",
+          "values": {
+            "Largura": 0.45,
+            "Profundidade": 0.35,
+            "Altura": 0.82
+          },
+          "description": "Lavatório de louça fixado na parede"
+        },
+        {
+          "name": "Lavatório suspenso 55 cm",
+          "values": {
+            "Largura": 0.55,
+            "Profundidade": 0.42,
+            "Altura": 0.82
+          },
+          "description": "Lavatório de louça fixado na parede"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/maquina-lavar-roupa.ccomp",
+      "component": "Máquina de lavar roupa",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 3.0,
+          "hot_water": false,
+          "supply_weight": 1.0
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Máquina de lavar 12 kg",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.65,
+            "Altura": 0.95
+          },
+          "description": "Ponto de água fria e esgoto; prever TUE de 1000 VA"
+        },
+        {
+          "name": "Máquina de lavar 17 kg",
+          "values": {
+            "Largura": 0.68,
+            "Profundidade": 0.72,
+            "Altura": 1.05
+          },
+          "description": "Ponto de água fria e esgoto; prever TUE de 1500 VA"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/mictorio.ccomp",
+      "component": "Mictório",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 2.0,
+          "hot_water": false,
+          "supply_weight": 0.3
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura",
+        "Elevacao"
+      ],
+      "types": [
+        {
+          "name": "Mictório sifonado",
+          "values": {
+            "Largura": 0.35,
+            "Profundidade": 0.3,
+            "Altura": 0.6,
+            "Elevacao": 0.6
+          },
+          "description": "Mictório de louça com registro de pressão"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/pia-cozinha.ccomp",
+      "component": "Pia de cozinha com bancada",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 3.0,
+          "hot_water": true,
+          "supply_weight": 0.7
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Pia cozinha 120 cm",
+          "values": {
+            "Largura": 1.2,
+            "Profundidade": 0.55,
+            "Altura": 0.9
+          },
+          "description": "Bancada de granito com cuba inox e gabinete"
+        },
+        {
+          "name": "Pia cozinha 150 cm",
+          "values": {
+            "Largura": 1.5,
+            "Profundidade": 0.55,
+            "Altura": 0.9
+          },
+          "description": "Bancada de granito com cuba inox e gabinete"
+        },
+        {
+          "name": "Pia cozinha 200 cm",
+          "values": {
+            "Largura": 2.0,
+            "Profundidade": 0.55,
+            "Altura": 0.9
+          },
+          "description": "Bancada de granito com cuba inox e gabinete"
+        }
+      ]
+    },
+    {
+      "file": "components/plumbing/tanque.ccomp",
+      "component": "Tanque de lavar roupa",
+      "kind": "Plumbing",
+      "mep": {
+        "Fixture": {
+          "drain_units": 3.0,
+          "hot_water": false,
+          "supply_weight": 0.7
+        }
+      },
+      "parameters": [
+        "Largura",
+        "Profundidade",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Tanque 40 L",
+          "values": {
+            "Largura": 0.6,
+            "Profundidade": 0.55,
+            "Altura": 0.9
+          },
+          "description": "Tanque de louça com coluna"
+        },
+        {
+          "name": "Tanque 60 L",
+          "values": {
+            "Largura": 0.75,
+            "Profundidade": 0.6,
+            "Altura": 0.9
+          },
+          "description": "Tanque de louça com coluna"
+        }
+      ]
+    }
+  ]
+}

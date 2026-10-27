@@ -1,0 +1,107 @@
+{
+  "component": "Bacia sanitária com válvula de descarga",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.38,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.55,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Pé",
+        "material": "Louça",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.11",
+            "y": "-Profundidade / 2 + 0.15",
+            "z": "0",
+            "width": "0.22",
+            "depth": "Profundidade - 0.25",
+            "height": "0.25"
+          }
+        }
+      },
+      {
+        "name": "Bacia",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Cylinder": {
+            "x": "0",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "radius": "Largura / 2",
+            "height": "0.2"
+          }
+        }
+      },
+      {
+        "name": "Corpo",
+        "material": "Louça",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2 + Largura / 2",
+            "z": "0.2",
+            "width": "Largura",
+            "depth": "Profundidade - Largura / 2",
+            "height": "0.2"
+          }
+        }
+      },
+      {
+        "name": "Válvula",
+        "material": "Aço inox",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.04",
+            "y": "Profundidade / 2 - 0.03",
+            "z": "0.9",
+            "width": "0.08",
+            "depth": "0.03",
+            "height": "0.15"
+          }
+        }
+      }
+    ],
+    "mep": {
+      "Fixture": {
+        "drain_units": 6,
+        "supply_weight": 32,
+        "hot_water": false
+      }
+    }
+  },
+  "types": [
+    {
+      "name": "Bacia c/ válvula de descarga",
+      "values": {},
+      "info": {
+        "description": "Bacia convencional com válvula de descarga"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Aço inox",
+      "color": [
+        190,
+        195,
+        200
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "component": "Caixa de inspeção",
+  "def": {
+    "kind": "Plumbing",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Profundidade",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Fundo",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": true
+      }
+    ],
+    "items": [
+      {
+        "name": "Caixa",
+        "material": "Concreto",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.1",
+            "y": "-Profundidade / 2 - 0.1",
+            "z": "-Fundo - 0.1",
+            "width": "Largura + 0.2",
+            "depth": "Profundidade + 0.2",
+            "height": "Fundo + 0.1"
+          }
+        }
+      },
+      {
+        "name": "Interior vazio",
+        "material": "Concreto",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-Profundidade / 2",
+            "z": "-Fundo",
+            "width": "Largura",
+            "depth": "Profundidade",
+            "height": "Fundo + 0.01"
+          }
+        },
+        "void": true
+      },
+      {
+        "name": "Tampa",
+        "material": "Concreto",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.1",
+            "y": "-Profundidade / 2 - 0.1",
+            "z": "0",
+            "width": "Largura + 0.2",
+            "depth": "Profundidade + 0.2",
+            "height": "0.05"
+          }
+        }
+      }
+    ]
+  },
+  "types": [
+    {
+      "name": "Caixa de inspeção 60x60",
+      "values": {},
+      "info": {
+        "description": "Caixa de inspeção de esgoto em alvenaria/concreto"
+      }
+    },
+    {
+      "name": "Caixa de inspeção 80x80",
+      "values": {
+        "Largura": 0.8,
+        "Profundidade": 0.8
+      },
+      "info": {
+        "description": "Caixa de inspeção de esgoto em alvenaria/concreto"
+      }
+    }
+  ]
+}

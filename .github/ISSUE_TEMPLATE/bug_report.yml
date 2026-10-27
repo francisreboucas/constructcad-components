@@ -1,0 +1,22 @@
+name: Problema num componente · Component problem
+description: Geometria errada, dado de MEP incorreto ou arquivo que não abre.
+labels: [bug]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Arquivo · File
+      placeholder: components/plumbing/pia-cozinha.ccomp
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão do ConstructCAD · ConstructCAD version
+      placeholder: "0.5.0"
+  - type: textarea
+    id: what
+    attributes:
+      label: O que acontece · What happens
+    validations:
+      required: true

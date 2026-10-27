@@ -1,0 +1,28 @@
+name: Pedido de componente · Component request
+description: Sugira um componente que falta na biblioteca.
+labels: [component-request]
+body:
+  - type: dropdown
+    id: folder
+    attributes:
+      label: Categoria · Category
+      options: [furniture, casework, plumbing, electrical, lighting, doors, windows, outra · other]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Componente · Component
+      placeholder: "Ex.: Ofurô redondo"
+    validations:
+      required: true
+  - type: textarea
+    id: sizes
+    attributes:
+      label: Tamanhos e dados · Sizes and data
+      description: Medidas usuais, e para MEP as UHC, o peso, a potência em VA ou a norma de referência.
+  - type: textarea
+    id: reference
+    attributes:
+      label: Referências · References
+      description: Links para catálogos ou normas com as medidas.

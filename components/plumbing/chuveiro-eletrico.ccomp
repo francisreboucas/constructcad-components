@@ -1,0 +1,125 @@
+(
+  format_version: 1,
+  generator: "ConstructCAD 0.5.0",
+  component: "Chuveiro elétrico",
+  def: (
+    kind: Plumbing,
+    params: [
+      (
+        name: "Altura",
+        value: 2.1,
+        kind: Length,
+        instance: false,
+      ),
+      (
+        name: "Braco",
+        value: 0.3,
+        kind: Length,
+        instance: false,
+      ),
+    ],
+    items: [
+      (
+        name: "Braço",
+        shape: Box(
+          x: "-0.015",
+          y: "-Braco",
+          z: "Altura + 0.05",
+          width: "0.03",
+          depth: "Braco",
+          height: "0.03",
+        ),
+        material: "PVC",
+        in_plan: false,
+      ),
+      (
+        name: "Corpo",
+        shape: Cylinder(
+          x: "0",
+          y: "-Braco",
+          z: "Altura",
+          radius: "0.09",
+          height: "0.12",
+        ),
+        material: "PVC",
+        in_plan: true,
+      ),
+    ],
+    mep: Some(Fixture(
+      drain_units: 2.0,
+      supply_weight: 0.1,
+      hot_water: false,
+    )),
+  ),
+  types: [
+    (
+      name: "Chuveiro elétrico",
+      values: {
+        "Altura": 2.1,
+        "Braco": 0.3,
+      },
+      info: (
+        type_mark: "",
+        description: "Aquecimento no ponto: ligar também um ponto de TUE de 5500 W ou 7500 W",
+        manufacturer: "",
+        model: "",
+        url: "",
+        keynote: "",
+        classification: "",
+        fire_rating: "",
+        comments: "",
+        cost: None,
+      ),
+    ),
+  ],
+  materials: [
+    (
+      name: "PVC",
+      color: (236, 236, 230),
+      identity: (
+        description: "",
+        class: Plastic,
+        comments: "",
+        keywords: "",
+        manufacturer: "",
+        model: "",
+        cost: None,
+        url: "",
+        keynote: "",
+        mark: "",
+      ),
+      graphics: (
+        use_appearance: false,
+        transparency: 0.0,
+        surface: (
+          foreground: r#None,
+          foreground_color: (0, 0, 0),
+          background: r#None,
+          background_color: (255, 255, 255),
+        ),
+        cut: (
+          foreground: r#None,
+          foreground_color: (0, 0, 0),
+          background: r#None,
+          background_color: (255, 255, 255),
+        ),
+      ),
+      appearance: (
+        color: (236, 236, 230),
+        finish: Matte,
+        description: "",
+      ),
+      physical: (
+        behavior: Isotropic,
+        density: None,
+        thermal_conductivity: None,
+        specific_heat: None,
+        thermal_expansion: None,
+        youngs_modulus: None,
+        poisson: None,
+        compressive_strength: None,
+        tensile_strength: None,
+      ),
+    ),
+  ],
+)
