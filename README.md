@@ -11,7 +11,7 @@ A free library of parametric components for [ConstructCAD](https://github.com/fr
 
 ## Using a component
 
-1. Download a `.ccomp` file from [`components/`](components) (browse them in the [catalog](CATALOG.md)), or download the whole library as a ZIP from the green *Code* button.
+1. Download a `.ccomp` file from [`components/`](components) (browse them in the [catalog](CATALOG.md)), or download the whole library as a ZIP from the [latest release](https://github.com/francisreboucas/constructcad-components/releases/latest).
 2. In ConstructCAD, load it: the component and all its types join the project, with any materials the project lacks.
    From the command line or a macro:
 

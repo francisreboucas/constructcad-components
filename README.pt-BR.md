@@ -11,7 +11,7 @@ Biblioteca gratuita de componentes paramétricos para o [ConstructCAD](https://g
 
 ## Usando um componente
 
-1. Baixe um arquivo `.ccomp` de [`components/`](components) (veja todos no [catálogo](CATALOG.md)), ou a biblioteca inteira em ZIP pelo botão verde *Code*.
+1. Baixe um arquivo `.ccomp` de [`components/`](components) (veja todos no [catálogo](CATALOG.md)), ou a biblioteca inteira em ZIP pelo [release mais recente](https://github.com/francisreboucas/constructcad-components/releases/latest).
 2. No ConstructCAD, carregue o arquivo: o componente e todos os seus tipos entram no projeto, junto com os materiais que faltarem.
    Pela linha de comando ou numa macro:
 
