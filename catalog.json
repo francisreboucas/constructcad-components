@@ -175,6 +175,322 @@
       ]
     },
     {
+      "file": "components/doors/porta-abrir-dupla.ccomp",
+      "component": "Porta de abrir dupla",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta de abrir dupla 120 x 210",
+          "values": {
+            "Largura": 1.2,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de duas folhas, batente de madeira"
+        },
+        {
+          "name": "Porta de abrir dupla 140 x 210",
+          "values": {
+            "Largura": 1.4,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de duas folhas, batente de madeira"
+        },
+        {
+          "name": "Porta de abrir dupla 160 x 210",
+          "values": {
+            "Largura": 1.6,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de duas folhas, batente de madeira"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-abrir.ccomp",
+      "component": "Porta de abrir",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta de abrir 60 x 210",
+          "values": {
+            "Largura": 0.6,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de uma folha, batente de madeira"
+        },
+        {
+          "name": "Porta de abrir 70 x 210",
+          "values": {
+            "Largura": 0.7,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de uma folha, batente de madeira"
+        },
+        {
+          "name": "Porta de abrir 80 x 210",
+          "values": {
+            "Largura": 0.8,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de uma folha, batente de madeira"
+        },
+        {
+          "name": "Porta de abrir 90 x 210",
+          "values": {
+            "Largura": 0.9,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro de uma folha, batente de madeira"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-camarao.ccomp",
+      "component": "Porta camarão",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta camarão 70 x 210",
+          "values": {
+            "Largura": 0.7,
+            "Altura": 2.1
+          },
+          "description": "Porta sanfonada de quatro painéis, recolhidos aos dois lados"
+        },
+        {
+          "name": "Porta camarão 80 x 210",
+          "values": {
+            "Largura": 0.8,
+            "Altura": 2.1
+          },
+          "description": "Porta sanfonada de quatro painéis, recolhidos aos dois lados"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-correr-dupla.ccomp",
+      "component": "Porta de correr dupla",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta de correr dupla 140 x 210",
+          "values": {
+            "Largura": 1.4,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de duas folhas, trilho superior"
+        },
+        {
+          "name": "Porta de correr dupla 160 x 210",
+          "values": {
+            "Largura": 1.6,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de duas folhas, trilho superior"
+        },
+        {
+          "name": "Porta de correr dupla 200 x 210",
+          "values": {
+            "Largura": 2.0,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de duas folhas, trilho superior"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-correr.ccomp",
+      "component": "Porta de correr",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta de correr 70 x 210",
+          "values": {
+            "Largura": 0.7,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de uma folha"
+        },
+        {
+          "name": "Porta de correr 80 x 210",
+          "values": {
+            "Largura": 0.8,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de uma folha"
+        },
+        {
+          "name": "Porta de correr 90 x 210",
+          "values": {
+            "Largura": 0.9,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr aparente de uma folha"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-janela-correr.ccomp",
+      "component": "Porta-janela de correr",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta-janela de correr 150 x 210",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+        },
+        {
+          "name": "Porta-janela de correr 200 x 210",
+          "values": {
+            "Largura": 2.0,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+        },
+        {
+          "name": "Porta-janela de correr 250 x 210",
+          "values": {
+            "Largura": 2.5,
+            "Altura": 2.1
+          },
+          "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-pivotante.ccomp",
+      "component": "Porta pivotante",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta pivotante 100 x 240",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 2.4
+          },
+          "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+        },
+        {
+          "name": "Porta pivotante 120 x 240",
+          "values": {
+            "Largura": 1.2,
+            "Altura": 2.4
+          },
+          "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+        },
+        {
+          "name": "Porta pivotante 150 x 240",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 2.4
+          },
+          "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/porta-vidro.ccomp",
+      "component": "Porta de vidro temperado",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Porta de vidro temperado 80 x 210",
+          "values": {
+            "Largura": 0.8,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+        },
+        {
+          "name": "Porta de vidro temperado 90 x 210",
+          "values": {
+            "Largura": 0.9,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+        },
+        {
+          "name": "Porta de vidro temperado 100 x 210",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 2.1
+          },
+          "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+        }
+      ]
+    },
+    {
+      "file": "components/doors/portao-basculante.ccomp",
+      "component": "Portão basculante",
+      "kind": "Door",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura"
+      ],
+      "types": [
+        {
+          "name": "Portão basculante 250 x 220",
+          "values": {
+            "Largura": 2.5,
+            "Altura": 2.2
+          },
+          "description": "Portão basculante de garagem em chapa de aço"
+        },
+        {
+          "name": "Portão basculante 300 x 220",
+          "values": {
+            "Largura": 3.0,
+            "Altura": 2.2
+          },
+          "description": "Portão basculante de garagem em chapa de aço"
+        }
+      ]
+    },
+    {
       "file": "components/electrical/interruptor.ccomp",
       "component": "Interruptor de embutir",
       "kind": "Electrical",
@@ -947,6 +1263,286 @@
       ]
     },
     {
+      "file": "components/planting/buxinho.ccomp",
+      "component": "Buxinho",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Buxinho Ø50",
+          "values": {},
+          "description": "Arbusto de canteiro ou cerca viva, 0.5 m de altura, Ø0.5 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/cipreste-italiano.ccomp",
+      "component": "Cipreste-italiano",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Cipreste-italiano 8 m",
+          "values": {},
+          "description": "Conífera, 8 m de altura, copa Ø1.6 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/hibisco.ccomp",
+      "component": "Hibisco",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Hibisco Ø150",
+          "values": {},
+          "description": "Arbusto de canteiro ou cerca viva, 1.8 m de altura, Ø1.5 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/ipe-amarelo.ccomp",
+      "component": "Ipê-amarelo",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Ipê-amarelo 8 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 8 m de altura, copa Ø6 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/ixora.ccomp",
+      "component": "Ixora",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Ixora Ø80",
+          "values": {},
+          "description": "Arbusto de canteiro ou cerca viva, 0.8 m de altura, Ø0.8 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/jeriva.ccomp",
+      "component": "Jerivá",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Jerivá 8 m",
+          "values": {},
+          "description": "Palmeira de estipe único, 8 m de altura, copa Ø5 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/mangueira.ccomp",
+      "component": "Mangueira",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Mangueira 12 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 12 m de altura, copa Ø12 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/oiti.ccomp",
+      "component": "Oiti",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Oiti 10 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 10 m de altura, copa Ø10 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/palmeira-imperial.ccomp",
+      "component": "Palmeira-imperial",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Palmeira-imperial 15 m",
+          "values": {},
+          "description": "Palmeira de estipe único, 15 m de altura, copa Ø6 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/palmeira-real-australiana.ccomp",
+      "component": "Palmeira-real-australiana",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Palmeira-real-australiana 10 m",
+          "values": {},
+          "description": "Palmeira de estipe único, 10 m de altura, copa Ø4 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/pau-brasil.ccomp",
+      "component": "Pau-brasil",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Pau-brasil 10 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 10 m de altura, copa Ø7 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/pingo-de-ouro.ccomp",
+      "component": "Pingo-de-ouro",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Pingo-de-ouro Ø100",
+          "values": {},
+          "description": "Arbusto de canteiro ou cerca viva, 1 m de altura, Ø1 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/pinheiro.ccomp",
+      "component": "Pinheiro",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Pinheiro 12 m",
+          "values": {},
+          "description": "Conífera, 12 m de altura, copa Ø5 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/reseda.ccomp",
+      "component": "Resedá",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Resedá 5 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 5 m de altura, copa Ø4 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/sibipiruna.ccomp",
+      "component": "Sibipiruna",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Sibipiruna 15 m",
+          "values": {},
+          "description": "Árvore de copa arredondada, 15 m de altura, copa Ø12 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/tuia-holandesa.ccomp",
+      "component": "Tuia-holandesa",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Tuia-holandesa 4 m",
+          "values": {},
+          "description": "Conífera, 4 m de altura, copa Ø1.2 m"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/vaso-planta-40.ccomp",
+      "component": "Vaso com planta Ø40",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Vaso Ø40",
+          "values": {},
+          "description": "Vaso de terracota com planta ornamental"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/vaso-planta-60.ccomp",
+      "component": "Vaso com planta Ø60",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Vaso Ø60",
+          "values": {},
+          "description": "Vaso de terracota com planta ornamental"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/vaso-planta-80.ccomp",
+      "component": "Vaso com planta Ø80",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Vaso Ø80",
+          "values": {},
+          "description": "Vaso de terracota com planta ornamental"
+        }
+      ]
+    },
+    {
+      "file": "components/planting/washingtonia.ccomp",
+      "component": "Washingtonia",
+      "kind": "Generic",
+      "mep": null,
+      "parameters": [],
+      "types": [
+        {
+          "name": "Washingtonia 12 m",
+          "values": {},
+          "description": "Palmeira de estipe único, 12 m de altura, copa Ø4 m"
+        }
+      ]
+    },
+    {
       "file": "components/plumbing/bacia-caixa-acoplada.ccomp",
       "component": "Bacia sanitária com caixa acoplada",
       "kind": "Plumbing",
@@ -1438,6 +2034,255 @@
             "Altura": 0.9
           },
           "description": "Tanque de louça com coluna"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-abrir.ccomp",
+      "component": "Janela de abrir",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela de abrir 100 x 100",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 1.0,
+            "Peitoril": 1.1
+          },
+          "description": "Janela de abrir de duas folhas, madeira e vidro"
+        },
+        {
+          "name": "Janela de abrir 120 x 120",
+          "values": {
+            "Largura": 1.2,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de abrir de duas folhas, madeira e vidro"
+        },
+        {
+          "name": "Janela de abrir 150 x 120",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de abrir de duas folhas, madeira e vidro"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-basculante.ccomp",
+      "component": "Janela basculante",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela basculante 60 x 40",
+          "values": {
+            "Largura": 0.6,
+            "Altura": 0.4,
+            "Peitoril": 1.7
+          },
+          "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+        },
+        {
+          "name": "Janela basculante 60 x 60",
+          "values": {
+            "Largura": 0.6,
+            "Altura": 0.6,
+            "Peitoril": 1.5
+          },
+          "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+        },
+        {
+          "name": "Janela basculante 100 x 40",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 0.4,
+            "Peitoril": 1.7
+          },
+          "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-correr.ccomp",
+      "component": "Janela de correr",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela de correr 100 x 100",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 1.0,
+            "Peitoril": 1.1
+          },
+          "description": "Janela de correr de duas folhas, alumínio"
+        },
+        {
+          "name": "Janela de correr 120 x 120",
+          "values": {
+            "Largura": 1.2,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de duas folhas, alumínio"
+        },
+        {
+          "name": "Janela de correr 150 x 120",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de duas folhas, alumínio"
+        },
+        {
+          "name": "Janela de correr 200 x 120",
+          "values": {
+            "Largura": 2.0,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de duas folhas, alumínio"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-fixa.ccomp",
+      "component": "Janela fixa",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela fixa 60 x 60",
+          "values": {
+            "Largura": 0.6,
+            "Altura": 0.6,
+            "Peitoril": 1.5
+          },
+          "description": "Janela fixa de alumínio e vidro, sem abertura"
+        },
+        {
+          "name": "Janela fixa 100 x 100",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 1.0,
+            "Peitoril": 1.1
+          },
+          "description": "Janela fixa de alumínio e vidro, sem abertura"
+        },
+        {
+          "name": "Janela fixa 150 x 100",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 1.0,
+            "Peitoril": 1.1
+          },
+          "description": "Janela fixa de alumínio e vidro, sem abertura"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-maxim-ar.ccomp",
+      "component": "Janela maxim-ar",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela maxim-ar 60 x 60",
+          "values": {
+            "Largura": 0.6,
+            "Altura": 0.6,
+            "Peitoril": 1.5
+          },
+          "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+        },
+        {
+          "name": "Janela maxim-ar 80 x 60",
+          "values": {
+            "Largura": 0.8,
+            "Altura": 0.6,
+            "Peitoril": 1.5
+          },
+          "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+        },
+        {
+          "name": "Janela maxim-ar 100 x 60",
+          "values": {
+            "Largura": 1.0,
+            "Altura": 0.6,
+            "Peitoril": 1.5
+          },
+          "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+        }
+      ]
+    },
+    {
+      "file": "components/windows/janela-veneziana.ccomp",
+      "component": "Janela de correr com veneziana",
+      "kind": "Window",
+      "mep": null,
+      "parameters": [
+        "Largura",
+        "Altura",
+        "Peitoril"
+      ],
+      "types": [
+        {
+          "name": "Janela de correr com veneziana 120 x 120",
+          "values": {
+            "Largura": 1.2,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
+        },
+        {
+          "name": "Janela de correr com veneziana 150 x 120",
+          "values": {
+            "Largura": 1.5,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
+        },
+        {
+          "name": "Janela de correr com veneziana 200 x 120",
+          "values": {
+            "Largura": 2.0,
+            "Altura": 1.2,
+            "Peitoril": 1.0
+          },
+          "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
         }
       ]
     }

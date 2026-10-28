@@ -3,7 +3,7 @@
 [![Validate](https://github.com/francisreboucas/constructcad-components/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/francisreboucas/constructcad-components/actions/workflows/validate.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC_BY_4.0-lightgrey.svg)](LICENSE)
 
-A free library of parametric components for [ConstructCAD](https://github.com/francisreboucas/constructcad): furniture, casework, plumbing fixtures, electrical devices and lighting, ready to load into any project.
+A free library of parametric components for [ConstructCAD](https://github.com/francisreboucas/constructcad): furniture, casework, plumbing fixtures, electrical devices, lighting and planting, ready to load into any project.
 
 [Português (Brasil)](README.pt-BR.md) · [Catalog](CATALOG.md) · [Contributing](CONTRIBUTING.md)
 
@@ -32,7 +32,9 @@ Each file holds one component with several types (sizes). Types share the geomet
 | [`plumbing`](components/plumbing) | Toilets, basins, sinks, showers, laundry tubs, washing machines, bathtubs, urinals, bidets, water tanks, inspection and grease boxes |
 | [`electrical`](components/electrical) | General and dedicated outlets, shower points, switches, distribution boards, data/TV points |
 | [`lighting`](components/lighting) | Ceiling, pendant, recessed, linear and wall lights |
-| [`doors`](components/doors), [`windows`](components/windows) | Not yet: see [their note](components/doors/README.md) |
+| [`planting`](components/planting) | Trees, conifers, palms, shrubs and potted plants for landscaping |
+| [`doors`](components/doors) | Single and double swing, pivot, folding, glass and sliding doors, glazed sliding doors, garage doors |
+| [`windows`](components/windows) | Sliding (also with shutters), casement, awning, hopper and fixed windows |
 
 Plumbing fixtures carry their drainage fixture units (NBR 8160) and supply weights (NBR 5626), and electrical devices their device kind and load in VA (NBR 5410), so ConstructCAD sizes pipes and circuits with them. Names and descriptions are in Brazilian Portuguese, following the standards they cite.
 
@@ -47,9 +49,11 @@ python tools/build.py --ccad path/to/ccad --check  # verify only (CI)
 
 A `.ccomp` saved from the app (`component_save`) can also be added directly under `components/`, without a source; it is validated and cataloged the same way.
 
+The planting sources are generated: [`tools/vegetation.py`](tools/vegetation.py) grows each species as a mesh (branches by space colonization, foliage clumps, palm fronds) and writes `sources/planting/`. Edit the generator and run it before `build.py`, not the JSON.
+
 ## Compatibility
 
-`.ccomp` format version 1, built with ConstructCAD 0.5.0. Files load in ConstructCAD 0.5.0 and later.
+`.ccomp` format version 1, built with ConstructCAD 0.6.0. Files load in ConstructCAD 0.6.0 and later (doors and windows need 0.6.0; in 0.5.0 the other components load without their connectors).
 
 ## License
 

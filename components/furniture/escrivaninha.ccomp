@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Escrivaninha",
   def: (
     kind: Furniture,

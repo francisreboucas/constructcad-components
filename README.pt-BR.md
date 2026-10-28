@@ -3,7 +3,7 @@
 [![Validate](https://github.com/francisreboucas/constructcad-components/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/francisreboucas/constructcad-components/actions/workflows/validate.yml)
 [![Licença: CC BY 4.0](https://img.shields.io/badge/licen%C3%A7a-CC_BY_4.0-lightgrey.svg)](LICENSE)
 
-Biblioteca gratuita de componentes paramétricos para o [ConstructCAD](https://github.com/francisreboucas/constructcad): mobiliário, marcenaria, louças e metais, dispositivos elétricos e iluminação, prontos para carregar em qualquer projeto.
+Biblioteca gratuita de componentes paramétricos para o [ConstructCAD](https://github.com/francisreboucas/constructcad): mobiliário, marcenaria, louças e metais, dispositivos elétricos, iluminação e paisagismo, prontos para carregar em qualquer projeto.
 
 [English](README.md) · [Catálogo](CATALOG.md) · [Como contribuir](CONTRIBUTING.md)
 
@@ -32,7 +32,9 @@ Cada arquivo traz um componente com vários tipos (tamanhos). Os tipos compartil
 | [`plumbing`](components/plumbing) | Bacias, lavatórios, pias, chuveiros, tanques, máquinas de lavar, banheiras, mictórios, bidês, caixas d'água, caixas de inspeção e de gordura |
 | [`electrical`](components/electrical) | TUGs, TUEs, pontos de chuveiro, interruptores, quadros de distribuição, pontos de dados e TV |
 | [`lighting`](components/lighting) | Plafons, pendentes, spots, luminárias lineares e arandelas |
-| [`doors`](components/doors), [`windows`](components/windows) | Ainda não: veja [a nota](components/doors/README.md) |
+| [`planting`](components/planting) | Árvores, coníferas, palmeiras, arbustos e vasos com planta para paisagismo |
+| [`doors`](components/doors) | Portas de abrir de uma e duas folhas, pivotante, camarão, de vidro temperado, de correr simples e dupla, porta-janela de correr e portão basculante |
+| [`windows`](components/windows) | Janelas de correr (também com veneziana), de abrir, maxim-ar, basculante e fixa |
 
 As louças trazem as unidades Hunter de contribuição (NBR 8160) e os pesos relativos (NBR 5626), e os dispositivos elétricos o tipo e a potência em VA (NBR 5410), para o ConstructCAD dimensionar tubulações e circuitos.
 
@@ -47,9 +49,11 @@ python tools/build.py --ccad caminho/do/ccad --check  # só verifica (CI)
 
 Um `.ccomp` salvo pelo próprio app (`component_save`) também pode ser adicionado direto em `components/`, sem fonte JSON; ele é validado e catalogado do mesmo jeito.
 
+As fontes de paisagismo são geradas: [`tools/vegetation.py`](tools/vegetation.py) cria cada espécie como malha (galhos por colonização do espaço, massas de folhas, frondes de palmeira) e escreve `sources/planting/`. Altere o gerador e rode-o antes do `build.py`, não o JSON.
+
 ## Compatibilidade
 
-Formato `.ccomp` versão 1, gerado com o ConstructCAD 0.5.0. Os arquivos abrem no ConstructCAD 0.5.0 ou mais recente.
+Formato `.ccomp` versão 1, gerado com o ConstructCAD 0.6.0. Os arquivos abrem no ConstructCAD 0.6.0 ou mais recente (portas e janelas exigem a 0.6.0; na 0.5.0 os demais componentes abrem sem os conectores).
 
 ## Licença
 

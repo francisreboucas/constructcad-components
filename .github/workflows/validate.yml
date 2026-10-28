@@ -10,7 +10,7 @@ permissions:
 
 env:
   # ConstructCAD release whose ccad builds and checks the components.
-  CONSTRUCTCAD_VERSION: v0.5.0
+  CONSTRUCTCAD_VERSION: v0.6.0
 
 jobs:
   validate:
