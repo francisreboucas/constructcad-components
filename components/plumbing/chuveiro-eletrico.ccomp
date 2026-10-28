@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Chuveiro elétrico",
   def: (
     kind: Plumbing,
@@ -50,6 +50,25 @@
       supply_weight: 0.1,
       hot_water: false,
     )),
+    connectors: [
+      (
+        name: "Água fria",
+        system: ColdWater,
+        x: "0",
+        y: "0",
+        z: "Altura + 0.065",
+        direction: Back,
+        diameter: "0.02",
+      ),
+      (
+        name: "Alimentação",
+        system: Power,
+        x: "0",
+        y: "0",
+        z: "Altura + 0.2",
+        direction: Back,
+      ),
+    ],
   ),
   types: [
     (

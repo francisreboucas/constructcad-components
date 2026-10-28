@@ -44,7 +44,17 @@
         "device": "Panel",
         "power": 0
       }
-    }
+    },
+    "connectors": [
+      {
+        "name": "Eletrodutos",
+        "system": "Power",
+        "x": "0",
+        "y": "-Profundidade / 2",
+        "z": "Altura",
+        "direction": "Up"
+      }
+    ]
   },
   "types": [
     {

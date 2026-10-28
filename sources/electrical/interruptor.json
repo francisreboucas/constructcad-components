@@ -38,7 +38,17 @@
         "device": "Switch",
         "power": 0
       }
-    }
+    },
+    "connectors": [
+      {
+        "name": "Eletroduto",
+        "system": "Lighting",
+        "x": "0",
+        "y": "0",
+        "z": "Altura / 2",
+        "direction": "Back"
+      }
+    ]
   },
   "types": [
     {

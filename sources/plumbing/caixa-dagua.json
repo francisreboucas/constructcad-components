@@ -72,6 +72,26 @@
           }
         }
       }
+    ],
+    "connectors": [
+      {
+        "name": "Entrada",
+        "system": "ColdWater",
+        "x": "RaioTopo",
+        "y": "0",
+        "z": "Altura - 0.15",
+        "direction": "Right",
+        "diameter": "0.025"
+      },
+      {
+        "name": "Saída",
+        "system": "ColdWater",
+        "x": "RaioBase",
+        "y": "0",
+        "z": "0.05",
+        "direction": "Right",
+        "diameter": "0.032"
+      }
     ]
   },
   "types": [

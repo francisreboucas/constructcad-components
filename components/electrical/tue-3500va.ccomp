@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Tomada de uso específico 3500 VA",
   def: (
     kind: Electrical,
@@ -37,6 +37,16 @@
       device: DedicatedOutlet,
       power: 3500.0,
     )),
+    connectors: [
+      (
+        name: "Eletroduto",
+        system: Power,
+        x: "0",
+        y: "0",
+        z: "Altura / 2",
+        direction: Back,
+      ),
+    ],
   ),
   types: [
     (

@@ -89,7 +89,27 @@
         "supply_weight": 0.3,
         "hot_water": false
       }
-    }
+    },
+    "connectors": [
+      {
+        "name": "Esgoto",
+        "system": "Sanitary",
+        "x": "0",
+        "y": "Profundidade / 2 - 0.3",
+        "z": "0",
+        "direction": "Down",
+        "diameter": "0.1"
+      },
+      {
+        "name": "Água fria",
+        "system": "ColdWater",
+        "x": "-0.15",
+        "y": "Profundidade / 2",
+        "z": "0.2",
+        "direction": "Back",
+        "diameter": "0.02"
+      }
+    ]
   },
   "types": [
     {

@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Quadro de distribuição (QDC)",
   def: (
     kind: Electrical,
@@ -43,6 +43,16 @@
       device: Panel,
       power: 0.0,
     )),
+    connectors: [
+      (
+        name: "Eletrodutos",
+        system: Power,
+        x: "0",
+        y: "-Profundidade / 2",
+        z: "Altura",
+        direction: Up,
+      ),
+    ],
   ),
   types: [
     (

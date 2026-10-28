@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Caixa de gordura",
   def: (
     kind: Plumbing,
@@ -55,6 +55,26 @@
         ),
         material: "PVC",
         in_plan: false,
+      ),
+    ],
+    connectors: [
+      (
+        name: "Entrada",
+        system: Sanitary,
+        x: "-Diametro / 2",
+        y: "0",
+        z: "-0.15",
+        direction: Left,
+        diameter: "0.075",
+      ),
+      (
+        name: "Saída",
+        system: Sanitary,
+        x: "Diametro / 2",
+        y: "0",
+        z: "-0.2",
+        direction: Right,
+        diameter: "0.1",
       ),
     ],
   ),

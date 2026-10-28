@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Caixa d\'água de polietileno",
   def: (
     kind: Plumbing,
@@ -65,6 +65,26 @@
         ),
         material: "Polietileno",
         in_plan: false,
+      ),
+    ],
+    connectors: [
+      (
+        name: "Entrada",
+        system: ColdWater,
+        x: "RaioTopo",
+        y: "0",
+        z: "Altura - 0.15",
+        direction: Right,
+        diameter: "0.025",
+      ),
+      (
+        name: "Saída",
+        system: ColdWater,
+        x: "RaioBase",
+        y: "0",
+        z: "0.05",
+        direction: Right,
+        diameter: "0.032",
       ),
     ],
   ),

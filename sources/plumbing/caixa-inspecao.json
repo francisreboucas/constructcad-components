@@ -69,6 +69,26 @@
           }
         }
       }
+    ],
+    "connectors": [
+      {
+        "name": "Entrada",
+        "system": "Sanitary",
+        "x": "-Largura / 2",
+        "y": "0",
+        "z": "-Fundo + 0.15",
+        "direction": "Left",
+        "diameter": "0.1"
+      },
+      {
+        "name": "Saída",
+        "system": "Sanitary",
+        "x": "Largura / 2",
+        "y": "0",
+        "z": "-Fundo + 0.1",
+        "direction": "Right",
+        "diameter": "0.1"
+      }
     ]
   },
   "types": [

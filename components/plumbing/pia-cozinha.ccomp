@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Pia de cozinha com bancada",
   def: (
     kind: Plumbing,
@@ -84,6 +84,35 @@
       supply_weight: 0.7,
       hot_water: true,
     )),
+    connectors: [
+      (
+        name: "Esgoto",
+        system: Sanitary,
+        x: "0",
+        y: "Profundidade / 2",
+        z: "0.5",
+        direction: Back,
+        diameter: "0.05",
+      ),
+      (
+        name: "Água fria",
+        system: ColdWater,
+        x: "-0.1",
+        y: "Profundidade / 2",
+        z: "0.6",
+        direction: Back,
+        diameter: "0.02",
+      ),
+      (
+        name: "Água quente",
+        system: HotWater,
+        x: "0.1",
+        y: "Profundidade / 2",
+        z: "0.6",
+        direction: Back,
+        diameter: "0.02",
+      ),
+    ],
   ),
   types: [
     (

@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Tanque de lavar roupa",
   def: (
     kind: Plumbing,
@@ -71,6 +71,26 @@
       supply_weight: 0.7,
       hot_water: false,
     )),
+    connectors: [
+      (
+        name: "Esgoto",
+        system: Sanitary,
+        x: "0",
+        y: "Profundidade / 2",
+        z: "0.45",
+        direction: Back,
+        diameter: "0.04",
+      ),
+      (
+        name: "Água fria",
+        system: ColdWater,
+        x: "0",
+        y: "Profundidade / 2",
+        z: "Altura + 0.2",
+        direction: Back,
+        diameter: "0.02",
+      ),
+    ],
   ),
   types: [
     (

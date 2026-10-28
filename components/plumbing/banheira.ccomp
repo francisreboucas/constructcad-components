@@ -1,6 +1,6 @@
 (
   format_version: 1,
-  generator: "ConstructCAD 0.5.0",
+  generator: "ConstructCAD 0.6.0",
   component: "Banheira",
   def: (
     kind: Plumbing,
@@ -58,6 +58,35 @@
       supply_weight: 1.0,
       hot_water: true,
     )),
+    connectors: [
+      (
+        name: "Esgoto",
+        system: Sanitary,
+        x: "-Largura / 2 + 0.2",
+        y: "0",
+        z: "0",
+        direction: Down,
+        diameter: "0.04",
+      ),
+      (
+        name: "Água fria",
+        system: ColdWater,
+        x: "-Largura / 2 + 0.1",
+        y: "Profundidade / 2",
+        z: "0.75",
+        direction: Back,
+        diameter: "0.02",
+      ),
+      (
+        name: "Água quente",
+        system: HotWater,
+        x: "-Largura / 2 + 0.25",
+        y: "Profundidade / 2",
+        z: "0.75",
+        direction: Back,
+        diameter: "0.02",
+      ),
+    ],
   ),
   types: [
     (
