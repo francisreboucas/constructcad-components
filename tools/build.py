@@ -33,6 +33,7 @@ SECTIONS = {
     "plumbing": "Hidrossanitário · Plumbing",
     "electrical": "Elétrico · Electrical",
     "lighting": "Iluminação · Lighting",
+    "planting": "Paisagismo · Planting",
     "doors": "Portas · Doors",
     "windows": "Janelas · Windows",
 }
@@ -104,9 +105,9 @@ def build_script(src: dict, out: Path, existing_materials: set[str]) -> list[dic
 def build(exe: str, out_root: Path) -> list[Path]:
     template_materials = {m["name"] for m in ccad(exe, "run", "materials_list")}
     # Names are resolved by name in the script, so they must not repeat the template's.
-    ids = [t["id"] for t in ccad(exe, "run", "types_list", "category=component")]
+    ids = [t["id"] for c in ("component", "door", "window") for t in ccad(exe, "run", "types_list", f"category={c}")]
     got = type_get_all(exe, ids)
-    template_types = {t["name"] for t in got} | {t["params"]["component"] for t in got}
+    template_types = {t["name"] for t in got} | {t["params"]["component"] for t in got if "component" in t["params"]}
     built = []
     for path in sorted(SOURCES.rglob("*.json")):
         rel = path.relative_to(SOURCES).with_suffix(".ccomp")

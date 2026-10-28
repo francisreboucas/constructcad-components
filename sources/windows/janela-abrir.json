@@ -1,0 +1,311 @@
+{
+  "component": "Janela de abrir",
+  "def": {
+    "kind": "Window",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.0,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 1.0,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Peitoril",
+        "value": 1.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.1 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.1",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.04",
+            "y": "-0.1 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.1",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.1 / 2",
+            "z": "0",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.1",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.1 / 2",
+            "z": "Altura - 0.04",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.1",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Vidro",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04 + 0.05",
+            "y": "-0.003",
+            "z": "0.04 + 0.05",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.006",
+            "height": "Altura - 2 * 0.04 - 2 * 0.05"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "0.05",
+            "depth": "0.04",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04 + (Largura - 2 * 0.04) / 2 - 0.05",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "0.05",
+            "depth": "0.04",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04 + 0.05",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.04",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04 + 0.05",
+            "y": "-0.02",
+            "z": "Altura - 0.04 - 0.05",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.04",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Vidro",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0 + 0.05",
+            "y": "-0.003",
+            "z": "0.04 + 0.05",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.006",
+            "height": "Altura - 2 * 0.04 - 2 * 0.05"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "0.05",
+            "depth": "0.04",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0 + (Largura - 2 * 0.04) / 2 - 0.05",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "0.05",
+            "depth": "0.04",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0 + 0.05",
+            "y": "-0.02",
+            "z": "0.04",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.04",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Caixilho",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0 + 0.05",
+            "y": "-0.02",
+            "z": "Altura - 0.04 - 0.05",
+            "width": "(Largura - 2 * 0.04) / 2 - 2 * 0.05",
+            "depth": "0.04",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Peitoril",
+        "material": "Granito",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.03",
+            "y": "-WallThickness / 2 - 0.03",
+            "z": "-0.02",
+            "width": "Largura + 0.06",
+            "depth": "WallThickness + 0.03",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "sill": "Peitoril"
+    }
+  },
+  "types": [
+    {
+      "name": "Janela de abrir 100 x 100",
+      "values": {
+        "Largura": 1.0,
+        "Altura": 1.0,
+        "Peitoril": 1.1
+      },
+      "info": {
+        "description": "Janela de abrir de duas folhas, madeira e vidro"
+      }
+    },
+    {
+      "name": "Janela de abrir 120 x 120",
+      "values": {
+        "Largura": 1.2,
+        "Altura": 1.2,
+        "Peitoril": 1.0
+      },
+      "info": {
+        "description": "Janela de abrir de duas folhas, madeira e vidro"
+      }
+    },
+    {
+      "name": "Janela de abrir 150 x 120",
+      "values": {
+        "Largura": 1.5,
+        "Altura": 1.2,
+        "Peitoril": 1.0
+      },
+      "info": {
+        "description": "Janela de abrir de duas folhas, madeira e vidro"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Madeira",
+      "color": [
+        150,
+        105,
+        70
+      ]
+    },
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    }
+  ]
+}

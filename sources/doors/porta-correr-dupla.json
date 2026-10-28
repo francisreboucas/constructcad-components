@@ -1,0 +1,205 @@
+{
+  "component": "Porta de correr dupla",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.4,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "-WallThickness / 2",
+            "z": "Altura - 0.05",
+            "width": "Largura - 2 * 0.05",
+            "depth": "WallThickness",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.025",
+            "y": "WallThickness / 2 + 0.01",
+            "z": "0",
+            "width": "Largura / 2 + 0.025",
+            "depth": "0.035",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "0",
+            "y": "WallThickness / 2 + 0.01",
+            "z": "0",
+            "width": "Largura / 2 + 0.025",
+            "depth": "0.035",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Trilho",
+        "material": "Alumínio",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura - 0.05",
+            "y": "WallThickness / 2 + 0.005",
+            "z": "Altura",
+            "width": "2 * Largura + 0.1",
+            "depth": "0.05",
+            "height": "0.06"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.08",
+            "y": "WallThickness / 2 + 0.045",
+            "z": "1.0",
+            "width": "0.03",
+            "depth": "0.03",
+            "height": "0.25"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0.05",
+            "y": "WallThickness / 2 + 0.045",
+            "z": "1.0",
+            "width": "0.03",
+            "depth": "0.03",
+            "height": "0.25"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "own_symbol": true
+    }
+  },
+  "types": [
+    {
+      "name": "Porta de correr dupla 140 x 210",
+      "values": {
+        "Largura": 1.4,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr aparente de duas folhas, trilho superior"
+      }
+    },
+    {
+      "name": "Porta de correr dupla 160 x 210",
+      "values": {
+        "Largura": 1.6,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr aparente de duas folhas, trilho superior"
+      }
+    },
+    {
+      "name": "Porta de correr dupla 200 x 210",
+      "values": {
+        "Largura": 2.0,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr aparente de duas folhas, trilho superior"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Madeira",
+      "color": [
+        150,
+        105,
+        70
+      ]
+    },
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    },
+    {
+      "name": "Metal cromado",
+      "color": [
+        205,
+        205,
+        210
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "component": "Janela de correr com veneziana",
+  "def": {
+    "kind": "Window",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.2,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 1.2,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Peitoril",
+        "value": 1.0,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.12 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.12",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.04",
+            "y": "-0.12 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.12",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.12 / 2",
+            "z": "0",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.12",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.12 / 2",
+            "z": "Altura - 0.04",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.12",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Veneziana",
+        "material": "Veneziana",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.055",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.02",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Veneziana",
+        "material": "Veneziana",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.02",
+            "y": "-0.03",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.02",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "0.01",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.012",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.02",
+            "y": "0.035",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.012",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Peitoril",
+        "material": "Granito",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.03",
+            "y": "-WallThickness / 2 - 0.03",
+            "z": "-0.02",
+            "width": "Largura + 0.06",
+            "depth": "WallThickness + 0.03",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "sill": "Peitoril"
+    }
+  },
+  "types": [
+    {
+      "name": "Janela de correr com veneziana 120 x 120",
+      "values": {
+        "Largura": 1.2,
+        "Altura": 1.2,
+        "Peitoril": 1.0
+      },
+      "info": {
+        "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
+      }
+    },
+    {
+      "name": "Janela de correr com veneziana 150 x 120",
+      "values": {
+        "Largura": 1.5,
+        "Altura": 1.2,
+        "Peitoril": 1.0
+      },
+      "info": {
+        "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
+      }
+    },
+    {
+      "name": "Janela de correr com veneziana 200 x 120",
+      "values": {
+        "Largura": 2.0,
+        "Altura": 1.2,
+        "Peitoril": 1.0
+      },
+      "info": {
+        "description": "Janela de correr de quatro folhas, duas venezianas e duas de vidro, para dormitório"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    },
+    {
+      "name": "Veneziana",
+      "color": [
+        236,
+        236,
+        230
+      ]
+    },
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    }
+  ]
+}

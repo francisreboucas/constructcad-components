@@ -1,0 +1,227 @@
+{
+  "component": "Porta pivotante",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.0,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.4,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "-WallThickness / 2",
+            "z": "Altura - 0.05",
+            "width": "Largura - 2 * 0.05",
+            "depth": "WallThickness",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "-0.025",
+            "z": "0",
+            "width": "(Largura - 2 * 0.05)",
+            "depth": "0.05",
+            "height": "Altura - 0.05 - 0.005"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05 - 0.15",
+            "y": "0.025",
+            "z": "0.45",
+            "width": "0.03",
+            "depth": "0.04",
+            "height": "1.2"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05 - 0.15",
+            "y": "-0.065",
+            "z": "0.45",
+            "width": "0.03",
+            "depth": "0.04",
+            "height": "1.2"
+          }
+        }
+      },
+      {
+        "name": "Giro",
+        "plan_only": true,
+        "in_plan": true,
+        "material": "",
+        "shape": {
+          "Profile": {
+            "plane": "Plan",
+            "offset": "0",
+            "depth": "0.001",
+            "points": [
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17",
+                "v": "0",
+                "radius": ""
+              },
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17 + (Largura - 2 * 0.05) * 0.83",
+                "v": "0",
+                "radius": "(Largura - 2 * 0.05) * 0.83"
+              },
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17",
+                "v": "(Largura - 2 * 0.05) * 0.83",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Giro",
+        "plan_only": true,
+        "in_plan": true,
+        "material": "",
+        "shape": {
+          "Profile": {
+            "plane": "Plan",
+            "offset": "0",
+            "depth": "0.001",
+            "points": [
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17",
+                "v": "0",
+                "radius": ""
+              },
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17 - (Largura - 2 * 0.05) * 0.17",
+                "v": "0",
+                "radius": "(Largura - 2 * 0.05) * 0.17"
+              },
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) * 0.17",
+                "v": "-(Largura - 2 * 0.05) * 0.17",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "own_symbol": true
+    }
+  },
+  "types": [
+    {
+      "name": "Porta pivotante 100 x 240",
+      "values": {
+        "Largura": 1.0,
+        "Altura": 2.4
+      },
+      "info": {
+        "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+      }
+    },
+    {
+      "name": "Porta pivotante 120 x 240",
+      "values": {
+        "Largura": 1.2,
+        "Altura": 2.4
+      },
+      "info": {
+        "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+      }
+    },
+    {
+      "name": "Porta pivotante 150 x 240",
+      "values": {
+        "Largura": 1.5,
+        "Altura": 2.4
+      },
+      "info": {
+        "description": "Porta de entrada pivotante, folha de madeira e puxadores de barra"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Madeira",
+      "color": [
+        150,
+        105,
+        70
+      ]
+    },
+    {
+      "name": "Metal cromado",
+      "color": [
+        205,
+        205,
+        210
+      ]
+    }
+  ]
+}

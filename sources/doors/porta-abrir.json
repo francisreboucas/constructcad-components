@@ -1,0 +1,161 @@
+{
+  "component": "Porta de abrir",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "-WallThickness / 2",
+            "z": "Altura - 0.05",
+            "width": "Largura - 2 * 0.05",
+            "depth": "WallThickness",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "WallThickness / 2 - 0.035",
+            "z": "0",
+            "width": "Largura - 2 * 0.05",
+            "depth": "0.035",
+            "height": "Altura - 0.05 - 0.005"
+          }
+        }
+      },
+      {
+        "name": "Maçaneta",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05 - 0.16",
+            "y": "WallThickness / 2",
+            "z": "1.0",
+            "width": "0.12",
+            "depth": "0.05",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura"
+    }
+  },
+  "types": [
+    {
+      "name": "Porta de abrir 60 x 210",
+      "values": {
+        "Largura": 0.6,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de uma folha, batente de madeira"
+      }
+    },
+    {
+      "name": "Porta de abrir 70 x 210",
+      "values": {
+        "Largura": 0.7,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de uma folha, batente de madeira"
+      }
+    },
+    {
+      "name": "Porta de abrir 80 x 210",
+      "values": {
+        "Largura": 0.8,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de uma folha, batente de madeira"
+      }
+    },
+    {
+      "name": "Porta de abrir 90 x 210",
+      "values": {
+        "Largura": 0.9,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de uma folha, batente de madeira"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Madeira",
+      "color": [
+        150,
+        105,
+        70
+      ]
+    },
+    {
+      "name": "Metal cromado",
+      "color": [
+        205,
+        205,
+        210
+      ]
+    }
+  ]
+}

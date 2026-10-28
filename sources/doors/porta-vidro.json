@@ -1,0 +1,143 @@
+{
+  "component": "Porta de vidro temperado",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.8,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.01",
+            "y": "WallThickness / 2 - 0.01",
+            "z": "0.01",
+            "width": "Largura - 0.02",
+            "depth": "0.01",
+            "height": "Altura - 0.02"
+          }
+        }
+      },
+      {
+        "name": "Ferragem",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.01",
+            "y": "WallThickness / 2 - 0.03",
+            "z": "0",
+            "width": "0.15",
+            "depth": "0.05",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Ferragem",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.01",
+            "y": "WallThickness / 2 - 0.03",
+            "z": "Altura - 0.05",
+            "width": "0.15",
+            "depth": "0.05",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.12",
+            "y": "WallThickness / 2",
+            "z": "0.75",
+            "width": "0.025",
+            "depth": "0.04",
+            "height": "0.6"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.12",
+            "y": "WallThickness / 2 - 0.05",
+            "z": "0.75",
+            "width": "0.025",
+            "depth": "0.04",
+            "height": "0.6"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura"
+    }
+  },
+  "types": [
+    {
+      "name": "Porta de vidro temperado 80 x 210",
+      "values": {
+        "Largura": 0.8,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+      }
+    },
+    {
+      "name": "Porta de vidro temperado 90 x 210",
+      "values": {
+        "Largura": 0.9,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+      }
+    },
+    {
+      "name": "Porta de vidro temperado 100 x 210",
+      "values": {
+        "Largura": 1.0,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro em vidro temperado 10 mm, sem batente, com puxadores de barra"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Metal cromado",
+      "color": [
+        205,
+        205,
+        210
+      ]
+    }
+  ]
+}

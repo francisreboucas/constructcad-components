@@ -1,0 +1,181 @@
+{
+  "component": "Janela maxim-ar",
+  "def": {
+    "kind": "Window",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Peitoril",
+        "value": 1.5,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.04",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.04",
+            "y": "-0.04",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.04",
+            "z": "0",
+            "width": "Largura - 0.08",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.04",
+            "z": "Altura - 0.04",
+            "width": "Largura - 0.08",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.006",
+            "z": "0.04",
+            "width": "Largura - 0.08",
+            "depth": "0.012",
+            "height": "Altura - 0.08"
+          }
+        }
+      },
+      {
+        "name": "Peitoril",
+        "material": "Granito",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.03",
+            "y": "-WallThickness / 2 - 0.03",
+            "z": "-0.02",
+            "width": "Largura + 0.06",
+            "depth": "WallThickness + 0.03",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "sill": "Peitoril"
+    }
+  },
+  "types": [
+    {
+      "name": "Janela maxim-ar 60 x 60",
+      "values": {
+        "Largura": 0.6,
+        "Altura": 0.6
+      },
+      "info": {
+        "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+      }
+    },
+    {
+      "name": "Janela maxim-ar 80 x 60",
+      "values": {
+        "Largura": 0.8,
+        "Altura": 0.6
+      },
+      "info": {
+        "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+      }
+    },
+    {
+      "name": "Janela maxim-ar 100 x 60",
+      "values": {
+        "Largura": 1.0,
+        "Altura": 0.6
+      },
+      "info": {
+        "description": "Janela maxim-ar de uma folha, alumínio, para banheiros"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    },
+    {
+      "name": "Vidro",
+      "color": [
+        170,
+        200,
+        215
+      ]
+    },
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    }
+  ]
+}

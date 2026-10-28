@@ -1,0 +1,206 @@
+{
+  "component": "Janela basculante",
+  "def": {
+    "kind": "Window",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 0.6,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 0.4,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Peitoril",
+        "value": 1.7,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.04",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.08 / 2",
+            "z": "Altura - 0.04",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Vidro",
+        "material": "Vidro",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.003",
+            "z": "0.04",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.006",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Travessa",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.02",
+            "z": "0.04 + (Altura - 2 * 0.04) / 3 - 0.01",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.04",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Travessa",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.02",
+            "z": "0.04 + (Altura - 2 * 0.04) / 3 * 2 - 0.01",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.04",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Peitoril",
+        "material": "Granito",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 - 0.03",
+            "y": "-WallThickness / 2 - 0.03",
+            "z": "-0.02",
+            "width": "Largura + 0.06",
+            "depth": "WallThickness + 0.03",
+            "height": "0.02"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "sill": "Peitoril"
+    }
+  },
+  "types": [
+    {
+      "name": "Janela basculante 60 x 40",
+      "values": {
+        "Largura": 0.6,
+        "Altura": 0.4,
+        "Peitoril": 1.7
+      },
+      "info": {
+        "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+      }
+    },
+    {
+      "name": "Janela basculante 60 x 60",
+      "values": {
+        "Largura": 0.6,
+        "Altura": 0.6,
+        "Peitoril": 1.5
+      },
+      "info": {
+        "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+      }
+    },
+    {
+      "name": "Janela basculante 100 x 40",
+      "values": {
+        "Largura": 1.0,
+        "Altura": 0.4,
+        "Peitoril": 1.7
+      },
+      "info": {
+        "description": "Janela basculante de alumínio e vidro, três básculas, para banheiro ou área de serviço"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    },
+    {
+      "name": "Granito",
+      "color": [
+        70,
+        70,
+        75
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "component": "Portão basculante",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 2.5,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.2,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Aço",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.05",
+            "z": "0",
+            "width": "0.08",
+            "depth": "0.1",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Aço",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.08",
+            "y": "-0.05",
+            "z": "0",
+            "width": "0.08",
+            "depth": "0.1",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Aço",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.08",
+            "y": "-0.05",
+            "z": "Altura - 0.08",
+            "width": "Largura - 2 * 0.08",
+            "depth": "0.1",
+            "height": "0.08"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Aço",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.08",
+            "y": "-0.02",
+            "z": "0",
+            "width": "Largura - 2 * 0.08",
+            "depth": "0.04",
+            "height": "Altura - 0.08"
+          }
+        }
+      },
+      {
+        "name": "Abertura",
+        "plan_only": true,
+        "in_plan": true,
+        "material": "",
+        "shape": {
+          "Profile": {
+            "plane": "Plan",
+            "offset": "0",
+            "depth": "0.001",
+            "points": [
+              {
+                "u": "-Largura / 2 + 0.08",
+                "v": "0.05",
+                "radius": ""
+              },
+              {
+                "u": "Largura / 2 - 0.08",
+                "v": "0.05",
+                "radius": ""
+              },
+              {
+                "u": "Largura / 2 - 0.08",
+                "v": "0.05 + Altura * 0.7",
+                "radius": ""
+              },
+              {
+                "u": "-Largura / 2 + 0.08",
+                "v": "0.05 + Altura * 0.7",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "own_symbol": true
+    }
+  },
+  "types": [
+    {
+      "name": "Portão basculante 250 x 220",
+      "values": {
+        "Largura": 2.5,
+        "Altura": 2.2
+      },
+      "info": {
+        "description": "Portão basculante de garagem em chapa de aço"
+      }
+    },
+    {
+      "name": "Portão basculante 300 x 220",
+      "values": {
+        "Largura": 3.0,
+        "Altura": 2.2
+      },
+      "info": {
+        "description": "Portão basculante de garagem em chapa de aço"
+      }
+    }
+  ],
+  "materials": []
+}

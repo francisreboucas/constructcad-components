@@ -1,0 +1,227 @@
+{
+  "component": "Porta de abrir dupla",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.4,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.05",
+            "y": "-WallThickness / 2",
+            "z": "0",
+            "width": "0.05",
+            "depth": "WallThickness",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Batente",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "-WallThickness / 2",
+            "z": "Altura - 0.05",
+            "width": "Largura - 2 * 0.05",
+            "depth": "WallThickness",
+            "height": "0.05"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.05",
+            "y": "WallThickness / 2 - 0.035",
+            "z": "0",
+            "width": "(Largura - 2 * 0.05) / 2",
+            "depth": "0.035",
+            "height": "Altura - 0.05 - 0.005"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Madeira",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0",
+            "y": "WallThickness / 2 - 0.035",
+            "z": "0",
+            "width": "(Largura - 2 * 0.05) / 2",
+            "depth": "0.035",
+            "height": "Altura - 0.05 - 0.005"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Metal cromado",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-0.06",
+            "y": "WallThickness / 2",
+            "z": "1.0",
+            "width": "0.12",
+            "depth": "0.05",
+            "height": "0.02"
+          }
+        }
+      },
+      {
+        "name": "Giro",
+        "plan_only": true,
+        "in_plan": true,
+        "material": "",
+        "shape": {
+          "Profile": {
+            "plane": "Plan",
+            "offset": "0",
+            "depth": "0.001",
+            "points": [
+              {
+                "u": "-Largura / 2 + 0.05",
+                "v": "WallThickness / 2",
+                "radius": ""
+              },
+              {
+                "u": "-Largura / 2 + 0.05 + (Largura - 2 * 0.05) / 2",
+                "v": "WallThickness / 2",
+                "radius": "(Largura - 2 * 0.05) / 2"
+              },
+              {
+                "u": "-Largura / 2 + 0.05",
+                "v": "WallThickness / 2 + (Largura - 2 * 0.05) / 2",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Giro",
+        "plan_only": true,
+        "in_plan": true,
+        "material": "",
+        "shape": {
+          "Profile": {
+            "plane": "Plan",
+            "offset": "0",
+            "depth": "0.001",
+            "points": [
+              {
+                "u": "Largura / 2 - 0.05",
+                "v": "WallThickness / 2",
+                "radius": ""
+              },
+              {
+                "u": "Largura / 2 - 0.05",
+                "v": "WallThickness / 2 + (Largura - 2 * 0.05) / 2",
+                "radius": "(Largura - 2 * 0.05) / 2"
+              },
+              {
+                "u": "Largura / 2 - 0.05 - (Largura - 2 * 0.05) / 2",
+                "v": "WallThickness / 2",
+                "radius": ""
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "own_symbol": true
+    }
+  },
+  "types": [
+    {
+      "name": "Porta de abrir dupla 120 x 210",
+      "values": {
+        "Largura": 1.2,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de duas folhas, batente de madeira"
+      }
+    },
+    {
+      "name": "Porta de abrir dupla 140 x 210",
+      "values": {
+        "Largura": 1.4,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de duas folhas, batente de madeira"
+      }
+    },
+    {
+      "name": "Porta de abrir dupla 160 x 210",
+      "values": {
+        "Largura": 1.6,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de giro de duas folhas, batente de madeira"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Madeira",
+      "color": [
+        150,
+        105,
+        70
+      ]
+    },
+    {
+      "name": "Metal cromado",
+      "color": [
+        205,
+        205,
+        210
+      ]
+    }
+  ]
+}

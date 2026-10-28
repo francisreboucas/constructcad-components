@@ -1,0 +1,174 @@
+{
+  "component": "Porta-janela de correr",
+  "def": {
+    "kind": "Door",
+    "params": [
+      {
+        "name": "Largura",
+        "value": 1.5,
+        "kind": "Length",
+        "instance": false
+      },
+      {
+        "name": "Altura",
+        "value": 2.1,
+        "kind": "Length",
+        "instance": false
+      }
+    ],
+    "items": [
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "Largura / 2 - 0.04",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "0.04",
+            "depth": "0.08",
+            "height": "Altura"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.08 / 2",
+            "z": "0",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Marco",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.08 / 2",
+            "z": "Altura - 0.04",
+            "width": "Largura - 2 * 0.04",
+            "depth": "0.08",
+            "height": "0.04"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-Largura / 2 + 0.04",
+            "y": "-0.025",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.012",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Folha",
+        "material": "Vidro",
+        "in_plan": true,
+        "shape": {
+          "Box": {
+            "x": "-0.02",
+            "y": "0.013",
+            "z": "0.04",
+            "width": "Largura / 2 + 0.02 - 0.04",
+            "depth": "0.012",
+            "height": "Altura - 2 * 0.04"
+          }
+        }
+      },
+      {
+        "name": "Puxador",
+        "material": "Alumínio",
+        "in_plan": false,
+        "shape": {
+          "Box": {
+            "x": "0.0",
+            "y": "0.025",
+            "z": "0.95",
+            "width": "0.02",
+            "depth": "0.02",
+            "height": "0.3"
+          }
+        }
+      }
+    ],
+    "opening": {
+      "width": "Largura",
+      "height": "Altura",
+      "own_symbol": true
+    }
+  },
+  "types": [
+    {
+      "name": "Porta-janela de correr 150 x 210",
+      "values": {
+        "Largura": 1.5,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+      }
+    },
+    {
+      "name": "Porta-janela de correr 200 x 210",
+      "values": {
+        "Largura": 2.0,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+      }
+    },
+    {
+      "name": "Porta-janela de correr 250 x 210",
+      "values": {
+        "Largura": 2.5,
+        "Altura": 2.1
+      },
+      "info": {
+        "description": "Porta de correr em alumínio e vidro, duas folhas, para varanda ou jardim"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Alumínio",
+      "color": [
+        200,
+        200,
+        205
+      ]
+    }
+  ]
+}
